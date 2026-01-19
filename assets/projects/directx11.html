@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DirectX 11 Details - NguyenTienLong's Portfolio</title>
+
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="main-content">
+            <article class="about active" style="padding: 15px; max-width: 1000px; margin: auto;">
+                <header>
+                    <h2 class="h2 article-title">DirectX 11</h2>
+                </header>
+
+                <div class="blog-meta">
+                    <p class="blog-category">DirectX</p>
+                    <span class="dot"></span>
+                    <p>Render, Graphic Programming, Shader</p>
+                </div>
+
+                <br>
+                <hr class="half">
+                <br>
+
+                <div class="about-text">
+                    <p>
+                        As a graphic programmer learning DirectX 11, I'll delve into the pipeline stages,
+                        including input assembly, vertex shading, tessellation, geometry shading, pixel shading,
+                        and
+                        the output-merger stage.
+                    </p>
+                    <p>
+                        I made this practice as a Self Learning Project, My work is a Graphic Programmer, Shader
+                        and
+                        Effect development
+                    </p>
+                </div>
+
+                <br>
+                <hr class="half">
+                <br>
+
+                <div class="modal-image-banner">
+                    <div class="active">
+                        <img src="../images/GameImage/Shader/DirectX11/directx11-pbr-banner.png"
+                            loading="lazy" alt="Image">
+                    </div>
+                </div>
+
+                <div class="modal-explore">
+                    <button class="link-btn"
+                        onclick="OpenInNewTab('https://www.behance.net/gallery/210403657/Direct-11-Render-Pipeline-HLSL')">
+                        <ion-icon name="paper-plane" role="img" class="md hydrated"
+                            aria-label="paper plane"></ion-icon>
+                        <span>Explore More..</span>
+                    </button>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">DirectX 11</h3>
+                    </div>
+
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h3 timeline-item-title-h1">Main Responsibility</h4>
+                            <h4 class="h4 timeline-item-title">DirectX, Render pipeline, Shader</h4>
+
+                            <span>Shader, HLSL, VFX, Post progressing</span>
+
+                            <ul class="timeline-text">
+
+                                <li>
+                                    Learn to create and manage resources like buffers, shaders, and textures,
+                                    and
+                                    understand concepts such as depth buffers, render targets, and
+                                    multi-sampling
+                                    for antialiasing.
+                                </li>
+                                <li>
+                                    Explore how to efficiently manage GPU resources and use advanced
+                                    techniques like deferred rendering, instancing, and hardware tessellation to
+                                    create realistic graphics with high performance.
+                                </li>
+                                <li>
+                                    Use HLSL(High-Level Shading Language), where i can write custom shaders for
+                                    real-time lighting, shadowing, post-processing effects, and other visual
+                                    enhancements.
+                                </li>
+                                <li>
+                                    Understand how to optimize rendering for different hardware configurations,
+                                    making my applications robust and scalable across various platforms.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <br>
+                    <hr class="half">
+                    <br>
+
+                    <h4 class="h3">Project Video</h4>
+                    <br>
+                    <div class="modal-game-video" style="display: inline; justify-content: center;">
+
+                        <!--pbr shading-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+
+                                <h4 class="h3 timeline-item-title-h1">PBR Shading</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        PBR Shading with Directx 11.
+                                    </li>
+                                    <li>
+                                        Written based on the article <a
+                                            href="https://cdn2.unrealengine.com/Resources/files/2013SiggraphPresentationsNotes-26915738.pdf">Real
+                                            Shading in Unreal Engine 4</a> by Brian Karis, Epic Games
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-PBRShading.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+
+                        <!--deferred shading-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+
+                                <h4 class="h3 timeline-item-title-h1">Deferred Shading</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Deferred Shading in Directx 11.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-DeferredShading.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+
+                        <!--lighting -->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Lighting</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Multiple Point Light in Forward Shading.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-lighting-point.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Multiple Point Light with Projection Cube Map in Forward Shading.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-lighting-projection.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Capsule Light in Forward Shading.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-lighting-capsule.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        SpotLight in Forward Shading.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-lighting-spot.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Directional Light in Forward Shading.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-lighting-directional.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Ambient Occlusion-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Ambient Occlusion</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Pre-Baked Ambient Occlusion per vertex color.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-ambient-occlusion.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Pre-Baked Ambient Occlusion per vertex color.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-ambient-occlusion (2).mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Ambient Occlusion-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Screen Space Ambient Occlusion(SSAO)</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Realtime Screen Space Ambient Occlusion.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source src="../images/GameImage/Shader/Directx11/directx11-SSAO.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Realtime Screen Space Ambient Occlusion.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-SSAO (2).mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Terrain-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Terrain</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Terrain with Layer Blending.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-terrain-layer-blending.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Terrain Tesselation
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-terrain-tesselation.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Particle-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Particle Effect</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Flame Particle Effect construct by Geometry Shader and Compute Shader.
+                                    </li>
+                                    <li>
+                                        With Billboard Technique for always pointing the screen.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-particle-system-geometry-compute-shader.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Rain Particle Effect construct by Geometry Shader and Compute Shader.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-particle-system-rain.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--ShadowMapping-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Shadow Mapping</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Shadow Mapping with Depth Render and Directional Light.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-ShadowMapping.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Model Loading-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Model Loading With Assimp</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Model Loading Using <a href="https://assimp.org/">Assimp</a>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-assimp-model-loading.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Normal Mapping-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Normal Mapping</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Normal Mapping with Tesselation and Vertex Displacement.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-tesselation-displacement-by-normal.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Normal Mapping in Directx 11.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-normal-mapping.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Cube Mapping-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Cube Mapping</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Pre-baked Cube Mapping with Reflection model.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-preBaked-cube-mapping.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--GPU Instancing-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">GPU Instancing and Frustum culling</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        GPU Instancing and Frustum culling in Directx 11.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-GPUInstancing.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--Tesselation-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Tessellation</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Tesselation by distance of the Camera
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-tessellation.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!--PP Blur-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Blur Shader</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Blur Shader using Compute Shader Stage.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-pp-blur.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                        <!-- Other-->
+                        <ol class="timeline-list">
+
+                            <li class="timeline-item">
+                                <h4 class="h3 timeline-item-title-h1">Other Shader Feature</h4>
+                                <ul class="timeline-text">
+                                    <li>
+                                        Stencil and Planar Projection Shadow.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-stencil-plannar-projection.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Transparent and Alpha Clipping shader.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-transparent-alphaclipping.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Water Ripple with dynamic buffer and Calculate Ripple on CPU.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-water-drop-with-dynamic-buffer.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+
+                            <li class="timeline-item">
+                                <ul class="timeline-text">
+                                    <li>
+                                        Mesh Construct with Graph in Math.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-mesh-construct.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                            <li class="timeline-item">
+                                <video controls>
+                                    <source
+                                        src="../images/GameImage/Shader/Directx11/directx11-Graph-vertex-displacement.mp4"
+                                        loading="lazy">
+                                </video>
+                            </li>
+                        </ol>
+                        <br>
+
+                    </div>
+                    <br>
+                    <hr class="half">
+                    <br>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        function OpenInNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

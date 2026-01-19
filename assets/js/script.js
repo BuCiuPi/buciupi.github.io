@@ -1,11 +1,7 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
@@ -72,45 +68,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
-
-// filter variables
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-const modalContents = document.querySelectorAll("[data-modal-content]")
-
-// modal variable
-
-// modal toggle function
-const testimonialsModalFunc = function (id) {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-   
-  for (let i = 0; i < modalContents.length; i++) {
-    const element = modalContents[i];
-    
-    if (id == element.dataset.id) {
-      element.classList.add("active");
-      continue;
-    }
-    element.classList.remove("active"); 
-  }
-}
-
-// add click event to all modal items
-for (let i = 0; i < filterItems.length; i++) {
-
-  filterItems[i].addEventListener("click", function () {
-    testimonialsModalFunc(filterItems[i].getAttribute("data-modal-id"));
-  });
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
@@ -129,7 +86,6 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");

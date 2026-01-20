@@ -16,6 +16,7 @@
       - custom css link
     -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
 
     <!--
       - google font link
@@ -35,21 +36,21 @@
 
         <!--
       - #SIDEBAR
-    -->
+-->
 
-        <aside class="sidebar sidebar-profile-info" data-sidebar>
+        <aside class="sidebar sidebar-profile-info zoom-in" data-sidebar>
 
             <div class="sidebar-info">
 
-                <figure class="avatar-box">
+                <figure class="avatar-box zoom-in">
                     <img src="./assets/images/profile-image.png" alt="NguyenTienLong">
                 </figure>
 
                 <div class="info-content">
-                    <h1 class="name" title="NguyenTienLong">Nguyen Tien Long</h1>
+                    <h1 class="name zoom-in" title="NguyenTienLong">Nguyen Tien Long</h1>
 
-                    <p class="title">Game Developer</p>
-                    <p class="title">Technical Artist</p>
+                    <p class="title zoom-in" data-delay="300">Game Developer</p>
+                    <p class="title zoom-in" data-delay="600">Technical Artist</p>
                 </div>
 
                 <button class="info_more-btn" data-sidebar-btn>
@@ -66,7 +67,7 @@
 
                 <ul class="contacts-list">
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up">
 
                         <div class="icon-box">
                             <ion-icon name="mail-outline"></ion-icon>
@@ -81,7 +82,7 @@
 
                     </li>
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up" data-delay="100">
 
                         <div class="icon-box">
                             <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -95,7 +96,7 @@
 
                     </li>
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up" data-delay="200">
 
                         <div class="icon-box">
                             <ion-icon name="logo-github"></ion-icon>
@@ -109,7 +110,7 @@
 
                     </li>
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up" data-delay="300">
 
                         <div class="icon-box">
                             <ion-icon name="logo-linkedin"></ion-icon>
@@ -124,7 +125,7 @@
 
                     </li>
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up" data-delay="400">
 
                         <div class="icon-box">
                             <ion-icon name="logo-behance"></ion-icon>
@@ -139,7 +140,7 @@
 
                     </li>
 
-                    <li class="contact-item">
+                    <li class="contact-item fade-in-up" data-delay="500">
 
                         <div class="icon-box">
                             <ion-icon name="location-outline"></ion-icon>
@@ -197,19 +198,19 @@
 
                 <ul class="navbar-list">
 
-                    <li class="navbar-item">
+                    <li class="navbar-item zoom-in">
                         <button class="navbar-link  active" data-nav-link>About</button>
                     </li>
 
-                    <li class="navbar-item">
+                    <li class="navbar-item zoom-in">
                         <button class="navbar-link" data-nav-link>Resume</button>
                     </li>
 
-                    <li class="navbar-item">
+                    <li class="navbar-item zoom-in">
                         <button class="navbar-link" data-nav-link>Portfolio</button>
                     </li>
 
-                    <li class="navbar-item">
+                    <li class="navbar-item zoom-in">
                         <button class="navbar-link" data-nav-link>Contact</button>
                     </li>
 
@@ -227,7 +228,7 @@
                     <h2 class="h2 article-title">About me</h2>
                 </header>
 
-                <section class="about-text">
+                <section class="about-text fade-in-up">
                     <p>
                         As a Game Developer cum Technical Artist, I specialize in shader development, gameplay, game
                         performance
@@ -253,7 +254,7 @@
                     <h3 class="h3 service-title">What i'm doing</h3>
 
                     <ul class="service-list">
-                        <li class="service-item">
+                        <li class="service-item zoom-in">
                             <div class="service-icon-box">
                                 <img class="unity-icon" src="./assets/images/ToolLogos/unity-logo.png"
                                     alt="Unity development icon" width="40">
@@ -266,8 +267,7 @@
                                 </p>
                             </div>
                         </li>
-
-                        <li class="service-item">
+                        <li class="service-item zoom-in">
                             <div class="service-icon-box">
                                 <img src="./assets/images/ToolLogos/unreal-engine-logo.png" alt="Unity development icon"
                                     width="40">
@@ -280,7 +280,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="service-item">
+                        <li class="service-item zoom-in">
 
                             <div class="service-icon-box">
                                 <img src="./assets/images/icon-design.svg" alt="Shader icon" width="40">
@@ -295,8 +295,7 @@
                             </div>
 
                         </li>
-
-                        <li class="service-item">
+                        <li class="service-item zoom-in">
 
                             <div class="service-icon-box">
                                 <img src="./assets/images/icon-dev.svg" alt="Tool development icon" width="40">
@@ -326,7 +325,7 @@
 
                     <ul class="main-skill-list has-scrollbar">
 
-                        <li class="main-skill-item">
+                        <li class="main-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="main-skill-title-box">
                                     <h4 class="h4 main-skill-item-title" data-testimonials-title>Programming Languages
@@ -366,7 +365,7 @@
                             </div>
                         </li>
 
-                        <li class="main-skill-item">
+                        <li class="main-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="main-skill-title-box">
                                     <h4 class="h4 main-skill-item-title" data-testimonials-title>Principle</h4>
@@ -418,32 +417,32 @@
 
                     <ul class="clients-list has-scrollbar">
 
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="0">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/unity-logo.png" alt="unity logo">
                             </a>
                         </li>
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="100">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/unreal-engine-logo.png" alt="unreal engine logo">
                             </a>
                         </li>
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="200">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/blender-logo.png" alt="blender logo">
                             </a>
                         </li>
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="300">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/githud-logo.png" alt="github logo">
                             </a>
                         </li>
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="400">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/photoshop-logo.png" alt="photoshop-logo">
                             </a>
                         </li>
-                        <li class="clients-item">
+                        <li class="clients-item zoom-in" data-delay="500">
                             <a href="#">
                                 <img src="./assets/images/ToolLogos/trello-logo.png" alt="trello-logo">
                             </a>
@@ -466,13 +465,13 @@
                 <a href="./assets/Resume/NGUYENTIENLONG-Resume.pdf" style="margin-top: 20px; margin-bottom: 20px;">
                     <button class="link-btn">
                         <img src="./assets/images/icon-design.svg" alt="">
-                        <h3 >Download My Resume!..</h3>
+                        <h3>Download My Resume!..</h3>
                     </button>
                 </a>
                 <hr style="width: 50%; border-color: var(--onyx);">
                 <br>
 
-                <section class="timeline">
+                <section class="timeline fade-in-up">
 
                     <div class="title-wrapper">
                         <div class="icon-box">
@@ -542,7 +541,7 @@
 
                 </section>
 
-                <section class="timeline">
+                <section class="timeline fade-in-up">
 
                     <div class="title-wrapper">
                         <div class="icon-box">
@@ -579,7 +578,7 @@
                     <ul class="resume-skill-list has-scrollbar">
 
                         <!--Programming Language-->
-                        <li class="resume-skill-item">
+                        <li class="resume-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="resume-skill-title-box">
                                     <h4 class="h4 resume-skill-item-title" data-testimonials-title>Programming
@@ -631,7 +630,7 @@
                         </li>
 
                         <!--Shading Language-->
-                        <li class="resume-skill-item">
+                        <li class="resume-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="resume-skill-title-box">
                                     <h4 class="h4 resume-skill-item-title" data-testimonials-title>Shading
@@ -672,7 +671,7 @@
                         </li>
 
                         <!--IDE & Engine-->
-                        <li class="resume-skill-item">
+                        <li class="resume-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="resume-skill-title-box">
                                     <h4 class="h4 resume-skill-item-title" data-testimonials-title>IDE & Game Engine
@@ -722,7 +721,7 @@
                         </li>
 
                         <!--Tool-->
-                        <li class="resume-skill-item">
+                        <li class="resume-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="resume-skill-title-box">
                                     <h4 class="h4 resume-skill-item-title" data-testimonials-title>Tools
@@ -788,7 +787,7 @@
                         </li>
 
                         <!--Principle-->
-                        <li class="resume-skill-item">
+                        <li class="resume-skill-item fade-in-up">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="resume-skill-title-box">
                                     <h4 class="h4 resume-skill-item-title" data-testimonials-title>Principle</h4>
@@ -905,7 +904,7 @@
 
                     <ul class="project-list">
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="murgen-horror">
                             <a href="./assets/projects/murgen-horror.html">
 
@@ -936,7 +935,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="bread-town">
                             <a href="./assets/projects/bread-town.html">
 
@@ -968,7 +967,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="fire-fire-fire">
                             <a href="./assets/projects/fire-fire-fire.html">
 
@@ -998,7 +997,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="betakkuma">
                             <a href="./assets/projects/betakkuma.html">
 
@@ -1028,7 +1027,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="fantasy-rpg">
                             <a href="./assets/projects/fantasy-rpg.html">
 
@@ -1060,7 +1059,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="shader"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="shader"
                             data-modal-id="unity-shader">
                             <a href="./assets/projects/unity-shader.html">
 
@@ -1090,7 +1089,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="pino-rhythm">
                             <a href="./assets/projects/pino-rhythm.html">
 
@@ -1120,7 +1119,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="pino-koi">
                             <a href="./assets/projects/pino-koi.html">
 
@@ -1152,7 +1151,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="game"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="game"
                             data-modal-id="hitofudegaki">
                             <a href="./assets/projects/hitofudegaki.html">
 
@@ -1183,7 +1182,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="shader"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="shader"
                             data-modal-id="directx11">
                             <a href="./assets/projects/directx11.html">
 
@@ -1213,7 +1212,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="shader"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="shader"
                             data-modal-id="unreal-engine-shader">
                             <a href="./assets/projects/unreal-engine-shader.html">
 
@@ -1242,7 +1241,7 @@
                             </a>
                         </li>
 
-                        <li class="project-item blog-post-item active" data-filter-item data-category="tool"
+                        <li class="project-item blog-post-item fade-in-up active" data-filter-item data-category="tool"
                             data-modal-id="tool-development">
                             <a href="./assets/projects/tool-development.html">
 
@@ -1299,7 +1298,7 @@
                 </section>
 
                 <ul class="service-list">
-                    <li class="service-item">
+                    <li class="service-item zoom-in">
                         <div class="service-icon-box">
                             <img class="unity-icon" src="./assets/images/ToolLogos/githud-logo.png"
                                 alt="Unity development icon" width="40">
@@ -1313,7 +1312,7 @@
                         </div>
                     </li>
 
-                    <li class="service-item">
+                    <li class="service-item zoom-in">
                         <div class="service-icon-box">
                             <img class="unity-icon" src="./assets/images/ToolLogos/linkedin-logo.png"
                                 alt="Unity development icon" width="40">
@@ -1327,7 +1326,7 @@
                         </div>
                     </li>
 
-                    <li class="service-item">
+                    <li class="service-item zoom-in">
                         <div class="service-icon-box">
                             <img class="unity-icon" src="./assets/images/ToolLogos/gmail-logo.png"
                                 alt="Unity development icon" width="40">
@@ -1341,7 +1340,7 @@
                         </div>
                     </li>
 
-                    <li class="service-item">
+                    <li class="service-item zoom-in">
                         <div class="service-icon-box">
                             <img class="unity-icon" src="./assets/images/ToolLogos/behance-logo.png"
                                 alt="Unity development icon" width="40">
@@ -1365,6 +1364,7 @@
   - custom js link
 -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/animation.js"></script>
 
     <!--
   - ionicon link

@@ -44,9 +44,7 @@ const filterFunc = function (selectedValue) {
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
@@ -87,27 +85,50 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+const changePage = function (pageName) {
+  pages.forEach((page, index) => {
+    if (pageName === page.dataset.page) {
+      page.classList.add("active");
+      navigationLinks[index].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      page.classList.remove("active");
+      navigationLinks[index].classList.remove("active");
     }
-
   });
-}
+};
+
+// 1. Handle Clicks
+navigationLinks.forEach(link => {
+  link.addEventListener("click", function () {
+    const pageName = this.innerHTML.toLowerCase().trim();
+    changePage(pageName);
+    
+    // Push the state to browser history
+    history.pushState({ page: pageName }, "", `#${pageName}`);
+  });
+});
+
+// 2. Handle the "Back" and "Forward" buttons
+window.addEventListener("popstate", function (event) {
+  if (event.state && event.state.page) {
+    changePage(event.state.page);
+  } else {
+    // Default to the first page if no state exists
+    changePage(pages[0].dataset.page);
+  }
+});
+
+// 3. Handle Initial Load (and Refresh)
+window.addEventListener("load", function () {
+  const hash = window.location.hash.replace("#", "");
+  if (hash) {
+    changePage(hash);
+  }
+});
 
 function OpenInNewTab(url)
 {

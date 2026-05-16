@@ -1,0 +1,8 @@
+{
+  "title": "Broken Link Checker Skill",
+  "summary": "This skill checks all internal links (href, src) within HTML files to ensure the referenced local files (images, css, scripts) actually exist on disk.",
+  "timestamp": "2026-05-16T15:25:00Z",
+  "references": [
+    "check_links.py"
+  ]
+}

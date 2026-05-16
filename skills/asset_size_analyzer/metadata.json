@@ -1,0 +1,8 @@
+{
+  "title": "Asset Size Analyzer Skill",
+  "summary": "This skill scans the project's assets directory and highlights any images or videos that are exceptionally large (over 1MB) which could slow down the website loading time.",
+  "timestamp": "2026-05-16T15:27:00Z",
+  "references": [
+    "analyze_assets.py"
+  ]
+}

@@ -1,0 +1,334 @@
+# File Relationship Index
+
+This document maps out the file dependencies within the project.
+
+### `assets/projects/betakkuma.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://kantan.game/easygame
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/betakkuma-banner.jpg`
+- [Internal] `../images/GameImage/HyperCasual/betakkuma-game.mp4`
+- [Internal] `../images/GameImage/HyperCasual/betakkuma.gif`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay (2).png`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay (3).png`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay (4).png`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay (5).png`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay (6).png`
+- [Internal] `../images/GameImage/HyperCasual/betakuma-gameplay-1-.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/bread-town.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/SelfProject/bread-town (2).mp4`
+- [Internal] `../images/GameImage/SelfProject/bread-town (2).png`
+- [Internal] `../images/GameImage/SelfProject/bread-town (3).mp4`
+- [Internal] `../images/GameImage/SelfProject/bread-town (3).png`
+- [Internal] `../images/GameImage/SelfProject/bread-town (4).mp4`
+- [Internal] `../images/GameImage/SelfProject/bread-town (4).png`
+- [Internal] `../images/GameImage/SelfProject/bread-town (5).png`
+- [Internal] `../images/GameImage/SelfProject/bread-town (6).png`
+- [Internal] `../images/GameImage/SelfProject/bread-town-explode.gif`
+- [Internal] `../images/GameImage/SelfProject/bread-town-fail.gif`
+- [Internal] `../images/GameImage/SelfProject/bread-town-win.gif`
+- [Internal] `../images/GameImage/SelfProject/bread-town.gif`
+- [Internal] `../images/GameImage/SelfProject/bread-town.jpg`
+- [Internal] `../images/GameImage/SelfProject/bread-town.mp4`
+- [Internal] `../images/GameImage/SelfProject/bread-town.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/directx11.html`
+- [External] https://assimp.org/
+- [External] https://cdn2.unrealengine.com/Resources/files/2013SiggraphPresentationsNotes-26915738.pdf
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/Shader/DirectX11/directx11-pbr-banner.png`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-DeferredShading.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-GPUInstancing.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-Graph-vertex-displacement.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-PBRShading.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-SSAO (2).mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-SSAO.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-ShadowMapping.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-ambient-occlusion (2).mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-ambient-occlusion.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-assimp-model-loading.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-lighting-capsule.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-lighting-directional.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-lighting-point.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-lighting-projection.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-lighting-spot.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-mesh-construct.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-normal-mapping.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-particle-system-geometry-compute-shader.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-particle-system-rain.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-pp-blur.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-preBaked-cube-mapping.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-stencil-plannar-projection.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-terrain-layer-blending.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-terrain-tesselation.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-tesselation-displacement-by-normal.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-tessellation.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-transparent-alphaclipping.mp4`
+- [Internal] `../images/GameImage/Shader/Directx11/directx11-water-drop-with-dynamic-buffer.mp4`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/fantasy-rpg.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://kantan.game/easygame
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (2).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (3).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (4).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (5).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (6).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (7).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg (8).png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-rpg.png`
+- [Internal] `../images/GameImage/HyperCasual/fantasy-run-banner.jpg`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/fire-fire-fire.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://kantan.game/easygame
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire (2).png`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire (3).png`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire (4).png`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire (5).png`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire (6).png`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire.gif`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire.mp4`
+- [Internal] `../images/GameImage/HyperCasual/FireFireFire.png`
+- [Internal] `../images/GameImage/HyperCasual/firefirefire-banner.jpg`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/hitofudegaki.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://kantan.game/easygame
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `.../css/style.css`
+- [Internal] `.../images/GameImage/HyperCasual/Hitofudegaki (2).png`
+- [Internal] `.../images/GameImage/HyperCasual/Hitofudegaki (3).png`
+- [Internal] `.../images/GameImage/HyperCasual/Hitofudegaki.png`
+- [Internal] `.../images/GameImage/HyperCasual/hitofudegaki (4).png`
+- [Internal] `.../images/GameImage/HyperCasual/hitofudegaki-banner.png`
+- [Internal] `.../images/GameImage/HyperCasual/hitofudegaki.gif`
+- [Internal] `.../images/logo.ico`
+
+### `assets/projects/murgen-horror.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [External] https://www.mirrativ.com/
+- [External] https://www.youtube.com/embed/p-H91uiwRTo
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror (2).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror (3).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror (4).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror (5).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(1).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(2).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(3).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(4).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(5).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(6).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror(7).png`
+- [Internal] `../images/GameImage/MurgenHorror/mugen-horror.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/pino-koi.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [External] https://www.morinagamilk.co.jp/english/products/jp/icecream.php
+- [External] https://www.youtube.com/embed/oV0BsYHp1x4
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi (2).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi (3).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi (4).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi (5).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi (6).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi-banner.jpg`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi.gif`
+- [Internal] `../images/GameImage/HyperCasual/pino-koi.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/pino-rhythm.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [External] https://www.morinagamilk.co.jp/english/products/jp/icecream.php
+- [External] https://www.youtube.com/embed/d8jttwpKd6s
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm (2).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm (3).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm (4).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm (5).png`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm-banner.jpg`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm.gif`
+- [Internal] `../images/GameImage/HyperCasual/pino-rhythm.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/tool-development.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/HyperCasual/penguin-run.mp4`
+- [Internal] `../images/GameImage/HyperCasual/penguin-run.png`
+- [Internal] `../images/GameImage/Tool/hitofudetaki-level-design-tool.mp4`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/unity-shader.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://roystan.net/articles/toon-shader/
+- [External] https://roystan.net/articles/toon-water/
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [External] https://www.cyanilux.com/tutorials/forcefield-shader-breakdown-simple/
+- [External] https://www.cyanilux.com/tutorials/fractured-cube-breakdown/
+- [External] https://www.cyanilux.com/tutorials/holofoil-card-shader-breakdown/
+- [External] https://www.cyanilux.com/tutorials/soft-foliage-shader-breakdown/
+- [External] https://www.cyanilux.com/tutorials/spellbook-breakdown/
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/Shader/Unity/CellShading with Shadow, Lighting and pixel camera.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Electric VFX.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Following Particle.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Force Field.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Fractured Sphere.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Fried Egg Toon Shading.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Ground Sword Slash.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Healing particle effect.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Holofoil card.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Hologram Map.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Image Particle mapping.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Magic Obb.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Magic Obb2.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Shell Texturing.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Soft Foliage.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Stylized Water.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/SwordEffect.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/Toon Shading.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/book-flipping.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/hex-shield.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/hologram-effect.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/space-lamp.mp4`
+- [Internal] `../images/GameImage/Shader/Unity/unity-shader-banner.png`
+- [Internal] `../images/logo.ico`
+
+### `assets/projects/unreal-engine-shader.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [Internal] `../css/style.css`
+- [Internal] `../images/GameImage/Shader/UE/ue-interior-mapping (2).mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-interior-mapping.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-colorgrading.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-len-masking.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-masking.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-nose.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-radian-blur.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-under-water-and-caustic.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-water-drip.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-pp-water-drop.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-procedural-hexgrid (2).mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-procedural-hexgrid.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-tesselation-displacement-mapping (2).mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-tesselation-displacement-mapping.mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-toon-shading (2).mp4`
+- [Internal] `../images/GameImage/Shader/UE/ue-toon-shading.mp4`
+- [Internal] `../images/logo.ico`
+
+### `index.html`
+- [External] https://fonts.googleapis.com
+- [External] https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+- [External] https://fonts.gstatic.com
+- [External] https://github.com/BuCiuPi
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- [External] https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
+- [External] https://www.behance.net/longnguyentien1
+- [External] https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.5418937242!2d106.36490168394415!3d10.754617433196007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1713449756793!5m2!1sen!2s
+- [External] https://www.linkedin.com/in/nguyenlong147/
+- [External] mailto:nguyentienlong147@gmail.com
+- [External] tel:+84397475616
+- [Internal] `./assets/Resume/NGUYENTIENLONG-Resume.pdf`
+- [Internal] `./assets/css/animation.css`
+- [Internal] `./assets/css/style.css`
+- [Internal] `./assets/images/GameImage/HyperCasual/FireFireFire.gif`
+- [Internal] `./assets/images/GameImage/HyperCasual/betakkuma.gif`
+- [Internal] `./assets/images/GameImage/HyperCasual/fantasy-rpg-logo.png`
+- [Internal] `./assets/images/GameImage/HyperCasual/hitofudegaki-logo.png`
+- [Internal] `./assets/images/GameImage/HyperCasual/pino-koi.gif`
+- [Internal] `./assets/images/GameImage/HyperCasual/pino-rhythm.gif`
+- [Internal] `./assets/images/GameImage/MurgenHorror/mugen-horroror.gif`
+- [Internal] `./assets/images/GameImage/SelfProject/bread-town.gif`
+- [Internal] `./assets/images/GameImage/Shader/unity-shader-logo.gif`
+- [Internal] `./assets/images/GameImage/Shader/unreal-engine-shader.gif`
+- [Internal] `./assets/images/ToolLogos/behance-logo.png`
+- [Internal] `./assets/images/ToolLogos/blender-logo.png`
+- [Internal] `./assets/images/ToolLogos/directx-logo.png`
+- [Internal] `./assets/images/ToolLogos/githud-logo.png`
+- [Internal] `./assets/images/ToolLogos/gmail-logo.png`
+- [Internal] `./assets/images/ToolLogos/linkedin-logo.png`
+- [Internal] `./assets/images/ToolLogos/maya-logo.png`
+- [Internal] `./assets/images/ToolLogos/photoshop-logo.png`
+- [Internal] `./assets/images/ToolLogos/substance-designer-logo.png`
+- [Internal] `./assets/images/ToolLogos/substance-painter-logo.png`
+- [Internal] `./assets/images/ToolLogos/tool-development-logo.jpg`
+- [Internal] `./assets/images/ToolLogos/trello-logo.png`
+- [Internal] `./assets/images/ToolLogos/unity-logo.png`
+- [Internal] `./assets/images/ToolLogos/unreal-engine-logo.png`
+- [Internal] `./assets/images/icon-design.svg`
+- [Internal] `./assets/images/icon-dev.svg`
+- [Internal] `./assets/images/profile-image.png`
+- [Internal] `./assets/js/animation.js`
+- [Internal] `./assets/js/script.js`
+- [Internal] `./assets/projects/betakkuma.html`
+- [Internal] `./assets/projects/bread-town.html`
+- [Internal] `./assets/projects/directx11.html`
+- [Internal] `./assets/projects/fantasy-rpg.html`
+- [Internal] `./assets/projects/fire-fire-fire.html`
+- [Internal] `./assets/projects/hitofudegaki.html`
+- [Internal] `./assets/projects/murgen-horror.html`
+- [Internal] `./assets/projects/pino-koi.html`
+- [Internal] `./assets/projects/pino-rhythm.html`
+- [Internal] `./assets/projects/tool-development.html`
+- [Internal] `./assets/projects/unity-shader.html`
+- [Internal] `./assets/projects/unreal-engine-shader.html`
+

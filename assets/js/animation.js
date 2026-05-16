@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initAnimations() {
   const observerOptions = {
     threshold: 0.15 // 15% of the element must be visible
   };
@@ -25,4 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const targets = document.querySelectorAll('.fade-in-up, .zoom-in');
   targets.forEach(target => observer.observe(target));
+}
+
+// In case it's loaded statically without partials, fallback:
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelectorAll('[data-include]').length === 0) {
+    initAnimations();
+  }
 });

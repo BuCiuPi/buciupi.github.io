@@ -1,0 +1,67 @@
+<article class="about active" style="padding: 15px; max-width: 1000px; margin: auto;">
+    <header>
+        <h2 class="h2 article-title">{{title}}</h2>
+    </header>
+
+    <div class="blog-meta">
+        <p class="blog-category">{{engine}}</p>
+        <span class="dot"></span>
+        <p>{{genre}}</p>
+    </div>
+
+    <br>
+    <hr class="half">
+    <br>
+
+    <div class="about-text">
+        {{about_text}}
+    </div>
+
+    <br>
+    <hr class="half">
+    <br>
+
+    <div class="modal-image-banner">
+        <div class="active">
+            <img src="{{banner}}" loading="lazy" alt="Image">
+        </div>
+    </div>
+
+    <div class="modal-explore">
+        {{explore}}
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">{{title}}</h3>
+        </div>
+
+        <ol class="timeline-list">
+            {{timeline}}
+        </ol>
+
+        <br>
+        <hr class="half">
+        <br>
+
+        {{videos}}
+        
+        <br>
+        <hr class="half">
+        <br>
+
+        <h4 class="h3">Image Category</h4>
+        <br>
+        <div class="modal-image-container">
+            {{images}}
+        </div>
+    </section>
+</article>

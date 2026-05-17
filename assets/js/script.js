@@ -22,7 +22,9 @@ async function loadPartials() {
   });
 
   await Promise.all(promises);
-  
+
+  await loadProjects();
+
   // Initialize all logic and animations once DOM is fully populated
   initLogic();
   if (typeof initAnimations === 'function') {
@@ -30,11 +32,43 @@ async function loadPartials() {
   }
 }
 
+async function loadProjects() {
+  const projectListContainer = document.getElementById('project-list');
+  if (!projectListContainer) return;
+
+  try {
+    const response = await fetch('./assets/data/projects.json');
+    if (!response.ok) throw new Error('Failed to load projects');
+    const projects = await response.json();
+
+    const templateResponse = await fetch('./partials/portfolio/portfolio_project-item.html');
+    if (!templateResponse.ok) throw new Error('Failed to load project template');
+    const templateStr = await templateResponse.text();
+
+    const projectHTML = projects.map(project => {
+      let itemHTML = templateStr;
+      for (const key in project) {
+        if (key === 'imageStyle') {
+          const styleStr = project[key] ? `style="${project[key]}"` : '';
+          itemHTML = itemHTML.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), styleStr);
+        } else {
+          itemHTML = itemHTML.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), project[key]);
+        }
+      }
+      return itemHTML;
+    }).join('');
+
+    projectListContainer.innerHTML = projectHTML;
+  } catch (e) {
+    console.error('Error loading projects:', e);
+  }
+}
+
 function initLogic() {
   // sidebar variables
   const sidebar = document.querySelector("[data-sidebar]");
   const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-  
+
   // sidebar toggle functionality for mobile
   if (sidebarBtn && sidebar) {
     sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
@@ -130,7 +164,7 @@ function initLogic() {
     link.addEventListener("click", function () {
       const pageName = this.innerHTML.toLowerCase().trim();
       changePage(pageName);
-      
+
       // Push the state to browser history
       history.pushState({ page: pageName }, "", `#${pageName}`);
     });
@@ -155,8 +189,7 @@ function initLogic() {
   }
 }
 
-function OpenInNewTab(url)
-{
+function OpenInNewTab(url) {
   window.open(url, '_blank').focus();
 }
 

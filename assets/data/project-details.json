@@ -1,0 +1,429 @@
+[
+  {
+    "id": "betakkuma",
+    "title": "Betakkuma",
+    "engine": "Unity Engine",
+    "genre": "Hyper Casual, Rhythm",
+    "banner": "../images/GameImage/HyperCasual/betakkuma-banner.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "As the tempo increases, so does the challenge, with faster bullet patterns and tighter rhythms",
+          "The longer you groove without missing a beat, the higher your score climbs. Master the timing and movements to unlock new levels, songs, and characters costume."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX",
+        "bullets": [
+          "Maintain, and fix bugs in the gameplay.",
+          "Optimize game performance and enhance VFX efficiency by reducing draw calls to ensure compatibility with the WebGL platform.",
+          "Create a new UI/UX that fits the expanded gameplay features, ensuring intuitive navigation, clear controls, and a seamless player experience."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/HyperCasual/betakkuma.gif",
+      "../images/GameImage/HyperCasual/betakuma-gameplay-1-.png",
+      "../images/GameImage/HyperCasual/betakuma-gameplay (2).png",
+      "../images/GameImage/HyperCasual/betakuma-gameplay (3).png",
+      "../images/GameImage/HyperCasual/betakuma-gameplay (4).png",
+      "../images/GameImage/HyperCasual/betakuma-gameplay (5).png",
+      "../images/GameImage/HyperCasual/betakuma-gameplay (6).png"
+    ],
+    "about": [
+      "Dodge incoming bullets while dancing to the rhythm in this fast-paced, music-driven game. Stay in sync with the beat to avoid obstacles and keep your moves smooth.",
+      "I maintaining and expand this game during the time at Indigames Inc as a Gameplay, UX/UI Programmer.",
+      "Published by <a href=\"https://kantan.game/easygame\" style=\"display: inline-block;\">GMO</a> a Web game platform."
+    ],
+    "explore_links": [
+      {
+        "link": "https://kantan.game/easygame/game/483",
+        "label": "Play Now"
+      }
+    ]
+  },
+  {
+    "id": "bread-town",
+    "title": "Bread Town",
+    "engine": "Unity Engine",
+    "genre": "Puzzle, Casual",
+    "banner": "../images/GameImage/SelfProject/bread-town.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "players explore a charming town filled with various types of bread and pastries. Similar to Candy Crush Saga, the gameplay revolves around matching three",
+          "The objective is to clear the board by completing level-specific goals such as collecting a certain number of items, breaking through obstacles like jam-covered tiles, or clearing special bread icons."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, Tool Development, Gameplay, Animation, VFX",
+        "bullets": [
+          "Designed a Scalable Game System for creating new types of gameplay.",
+          "Designed an Effect Manager System based on an object pooling pattern to efficiently manage multiple object pools within the scene.",
+          "Created various visual effects for the game, using a particle system, animator controller, skinned sprite renderer, sprite rigging, and transition animations.",
+          "Implemented Unity Editor tools for tasks such as data import, level design, game data management, testing, and debugging.",
+          "Collaborated closely with a Game Designer and 2D artists to customize game levels and enhance overall gameplay."
+        ]
+      }
+    ],
+    "videos": [
+      "../images/GameImage/SelfProject/bread-town (2).mp4",
+      "../images/GameImage/SelfProject/bread-town (3).mp4",
+      "../images/GameImage/SelfProject/bread-town.mp4",
+      "../images/GameImage/SelfProject/bread-town (4).mp4"
+    ],
+    "images": [
+      "../images/GameImage/SelfProject/bread-town.gif",
+      "../images/GameImage/SelfProject/bread-town (6).png",
+      "../images/GameImage/SelfProject/bread-town.jpg",
+      "../images/GameImage/SelfProject/bread-town-win.gif",
+      "../images/GameImage/SelfProject/bread-town.png",
+      "../images/GameImage/SelfProject/bread-town (5).png",
+      "../images/GameImage/SelfProject/bread-town-fail.gif",
+      "../images/GameImage/SelfProject/bread-town (2).png",
+      "../images/GameImage/SelfProject/bread-town (3).png",
+      "../images/GameImage/SelfProject/bread-town-explode.gif",
+      "../images/GameImage/SelfProject/bread-town (4).png"
+    ],
+    "about": [
+      "Bread Town is an 2D Puzzle, Match 3 game heavily inspired by Candy Crush Saga.",
+      "I made this game as a Self Learning Project My work is a Gameplay, UX/UI Programmer, VFX, Animation ."
+    ],
+    "explore_links": [
+      {
+        "link": "https://buciupi.github.io/match3-game-build/",
+        "label": "Play"
+      },
+      {
+        "link": "https://www.facebook.com/100003757244487/videos/437892558746519/",
+        "label": "Explore More.."
+      }
+    ]
+  },
+  {
+    "id": "fantasy-rpg",
+    "title": "FantasyRPG Run",
+    "engine": "Unity Engine",
+    "genre": "Hyper Casual, Action",
+    "banner": "../images/GameImage/HyperCasual/fantasy-run-banner.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "As you run, strategically gather upgrades to boost your firepower, speed, and defense, preparing for the ultimate showdown with epic bosses at the end of each stage.",
+          "Quick reflexes and smart decision-making are key to surviving waves of foes while building up your character's strength."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX, Gameplay",
+        "bullets": [
+          "Maintain, and fix bugs in the gameplay and expand the gameplay logic.",
+          "Collaborate with the game design team: Work alongside designers, artists, and other developers to ensure consistent and innovative implementation of game features and mechanics.",
+          "Optimize game performance and enhance VFX efficiency by reducing draw calls to ensure compatibility with the WebGL platform."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/HyperCasual/fantasy-rpg (2).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (3).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (4).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg.png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (5).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (8).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (6).png",
+      "../images/GameImage/HyperCasual/fantasy-rpg (7).png"
+    ],
+    "about": [
+      "In this fast-paced hyper-casual action game, players sprint through dynamic levels, collecting powerful weapons and leveling up their abilities to face increasingly tough enemies.",
+      "I maintaining and Expand this game during the time at Indigames Inc as a Gameplay, Tool Developer.",
+      "It first published by <a href=\"https://kantan.game/easygame\" style=\"display: inline-block;\">GMO</a> a Web game."
+    ],
+    "explore_links": [
+      {
+        "link": "https://kantan.game/easygame/game/504",
+        "label": "Play Now"
+      }
+    ]
+  },
+  {
+    "id": "fire-fire-fire",
+    "title": "Fire Fire Fire",
+    "engine": "Unity Engine",
+    "genre": "Hyper Casual, Puzzle Solving",
+    "banner": "../images/GameImage/HyperCasual/firefirefire-banner.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "In this puzzle game, players must skillfully stack a variety of objects to create a stable structure that allows fire to reach and burn the target.",
+          "Each level provides a set of items—such as wooden blocks, metal beams, and flammable objects—with different weights and properties. Players must drag and drop these items, balancing them carefully to prevent the stack from collapsing.",
+          "The challenge lies in ensuring the fire spreads to the target without burning out too quickly or missing the mark."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX, Gameplay",
+        "bullets": [
+          "Maintain, and fix bugs in the gameplay and expand the gameplay logic.",
+          "Optimize game performance and enhance VFX efficiency by reducing draw calls to ensure compatibility with the WebGL platform.",
+          "Create a new UI/UX that fits the expanded gameplay features, ensuring intuitive navigation, clear controls, and a seamless player experience."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/HyperCasual/FireFireFire (2).png",
+      "../images/GameImage/HyperCasual/FireFireFire (3).png",
+      "../images/GameImage/HyperCasual/FireFireFire (5).png",
+      "../images/GameImage/HyperCasual/FireFireFire (6).png",
+      "../images/GameImage/HyperCasual/FireFireFire.gif",
+      "../images/GameImage/HyperCasual/FireFireFire.png",
+      "../images/GameImage/HyperCasual/FireFireFire (4).png"
+    ],
+    "about": [
+      "FireFireFire is a physics-based puzzle game, your goal is to strategically stack objects and use fire to burn the target. Carefully arrange the available items, taking into account their shapes, weight, and balance, to create a stable structure. Once your stack is ready, ignite the fire and watch as it spreads, aiming to burn the target.",
+      "I maintaining and expand this game during the time at Indigames Inc as a Gameplay, UX/UI Programmer.",
+      "Published by <a href=\"https://kantan.game/easygame\" style=\"display: inline-block;\">GMO</a> a Web game platform."
+    ],
+    "explore_links": [
+      {
+        "link": "https://kantan.game/easygame/game/489",
+        "label": "Play Now"
+      }
+    ]
+  },
+  {
+    "id": "hitofudegaki",
+    "title": "Hitofudegaki",
+    "engine": "Unity Engine",
+    "genre": "Hyper Casual, Puzzle Solving",
+    "banner": ".../images/GameImage/HyperCasual/hitofudegaki-banner.png",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "Each level presents a new pattern, challenging you to find the perfect path without lifting your finger. As you progress, the puzzles become more intricate, requiring creative thinking and precise moves",
+          "With its soothing visuals and satisfying gameplay, this game offers a calm yet engaging experience for puzzle lovers."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX, Tool Development",
+        "bullets": [
+          "Developed a tool to manage 365 levels, enabling easy loading, saving, and editing of levels while identifying design errors for efficient troubleshooting.",
+          "Maintain, and fix bugs in the gameplay.",
+          "Optimize game performance and enhance VFX efficiency by reducing draw calls to ensure compatibility with the WebGL platform."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      ".../images/GameImage/HyperCasual/hitofudegaki.gif",
+      ".../images/GameImage/HyperCasual/hitofudegaki (4).png",
+      ".../images/GameImage/HyperCasual/Hitofudegaki.png",
+      ".../images/GameImage/HyperCasual/Hitofudegaki (2).png",
+      ".../images/GameImage/HyperCasual/Hitofudegaki (3).png"
+    ],
+    "about": [
+      "The game solving by connect the dots in one stroke to reveal hidden icons in this relaxing hyper-casual puzzle game!",
+      "I maintaining and Expand this game during the time at Indigames Inc as a Gameplay, Tool Developer.",
+      "It first published by <a href=\"https://kantan.game/easygame\" style=\"display: inline-block;\">GMO</a> a Web game platform and have been re-published by another company as a mini-games."
+    ],
+    "explore_links": [
+      {
+        "link": "https://kantan.game/easygame/game/473",
+        "label": "Play Now"
+      }
+    ]
+  },
+  {
+    "id": "murgen-horror",
+    "title": "Murgen Horror",
+    "engine": "Unity Engine",
+    "genre": "Action RPG, Horror",
+    "banner": "../images/GameImage/MurgenHorror/mugen-horror (5).png",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "This multi-genre game allows players to explore haunted locations, uncover their stories, and defeat main ghosts. In each level, players begin by searching and solving puzzles to find the key to the room where the main ghost resides. Upon entering that room, players engage in combat mode with the ghost.",
+          "After defeating the boss, players receive items, clothes, and materials to equip themselves or enhance their camera. These items and equipment can also be purchased in the shop. The game features a blend of 3D third-person exploration, 2D puzzle-solving and searching, and 3D first-person shooter combat.",
+          "It is available on the Mirrativ app, which allows players to livestream their gameplay. Viewers can give gifts or gacha to players and chat with them. When there are viewers, players receive a strength boost at the beginning of the game.",
+          "Team composition includes a total of 18 individuals, with 8 working in the front-end team, 3 in the back-end team, 1 in project owner, 1 is director, 4 in design , and 1 serving as a tester."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, Tool Development, Gameplay",
+        "bullets": [
+          "Creating Inventory UI/UX and implementing interact, multiple selecting, and using items.",
+          "Optimize performance and optimize RAM usage by using recycle list items(100-300 items)",
+          "Creating Tools and logic to import game data from outside(TSV file). Support GD to manage the Game Master Data.",
+          "Making responsive dialog, lobby, popup Panel...",
+          "Created new skills for enemies/bosses based on the game ability system."
+        ]
+      },
+      {
+        "title": "Achievements",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "Successfully integrated enemy stats using the existing GAS(gameplay ability system).",
+          "Implemented new enemy and boss skills that leveraged the game ability system, enhancing game complexity and strategy.",
+          "Developed custom tools for Game Designers, automating workflows, improving efficiency, and enabling seamless integration of assets and level design elements.",
+          "Released in late November 2022 and had been the most popular game on Mirrativ app for 3 months."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/MurgenHorror/mugen-horror.png",
+      "../images/GameImage/MurgenHorror/mugen-horror(1).png",
+      "../images/GameImage/MurgenHorror/mugen-horror (2).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(2).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(3).png",
+      "../images/GameImage/MurgenHorror/mugen-horror (3).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(4).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(5).png",
+      "../images/GameImage/MurgenHorror/mugen-horror (4).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(6).png",
+      "../images/GameImage/MurgenHorror/mugen-horror(7).png"
+    ],
+    "about": [
+      "Mugen Horror Action is an 3D top down action RPG game heavily inspired by Fatal Frame series.",
+      "I made this game during the time at Indigames Inc as a Gameplay, UX/UI Programmer.",
+      "Published by <a href=\"https://www.mirrativ.com/\" style=\"display: inline-block;\">Mirrativ</a> live stream platform."
+    ],
+    "explore_links": [
+      {
+        "link": "https://mirrativtmbr.tumblr.com/im1Zo3AH9G_636",
+        "label": "Blog"
+      },
+      {
+        "link": "https://mirrativtmbr.tumblr.com/im1Zo3AH9G_636",
+        "label": "Explore More.."
+      }
+    ]
+  },
+  {
+    "id": "pino-koi",
+    "title": "Pino Koi",
+    "engine": "Unity Engine",
+    "genre": "Visual Novel",
+    "banner": "../images/GameImage/HyperCasual/pino-koi-banner.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "Once activated, players gain access to special in-game levels that are only available during the event. These levels are designed with ice cream-themed challenges, unique visuals, and custom rewards that tie into the Pino brand.",
+          "The event offers a limited-time experience where players can enjoy exclusive features, special bonuses, and compete for high scores."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX",
+        "bullets": [
+          "Create gameplay features and User Interface for the game.",
+          "Support the Game Designer in creating the gameplay data.",
+          "Developed a tool for easy loading, saving, and editing of levels while identifying design errors for efficient troubleshooting."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/HyperCasual/pino-koi.gif",
+      "../images/GameImage/HyperCasual/pino-koi.png",
+      "../images/GameImage/HyperCasual/pino-koi (2).png",
+      "../images/GameImage/HyperCasual/pino-koi (3).png",
+      "../images/GameImage/HyperCasual/pino-koi (4).png",
+      "../images/GameImage/HyperCasual/pino-koi (6).png",
+      "../images/GameImage/HyperCasual/pino-koi (5).png"
+    ],
+    "about": [
+      "Dodge incoming bullets while dancing to the rhythm in this fast-paced, music-driven game. Stay in sync with the beat to avoid obstacles and keep your moves smooth.",
+      "I make this game during the time at Indigames Inc as a Gameplay, UX/UI, VFX Programmer.",
+      "Published by <a href=\"https://www.morinagamilk.co.jp/english/products/jp/icecream.php\" style=\"display: inline-block;\"> Morinaga Milk </a> . The game can be played by purchasing a Pino Ice Cream during a time-limited event."
+    ],
+    "explore_links": [
+      {
+        "link": "https://www.famitsu.com/news/202209/29277502.html",
+        "label": "Explore more..."
+      }
+    ]
+  },
+  {
+    "id": "pino-rhythm",
+    "title": "Pino Rhythm",
+    "engine": "Unity Engine",
+    "genre": "Rhythm, Music",
+    "banner": "../images/GameImage/HyperCasual/pino-rhythm-banner.jpg",
+    "timeline": [
+      {
+        "title": "GamePlay Details",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "Once activated, players gain access to special in-game levels that are only available during the event. These levels are designed with ice cream-themed challenges, unique visuals, and custom rewards that tie into the Pino brand.",
+          "The event offers a limited-time experience where players can enjoy exclusive features, special bonuses, and compete for high scores."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX",
+        "bullets": [
+          "Create gameplay features and User Interface for the game.",
+          "Support the Game Designer in creating the gameplay data."
+        ]
+      }
+    ],
+    "videos": [],
+    "images": [
+      "../images/GameImage/HyperCasual/pino-rhythm.gif",
+      "../images/GameImage/HyperCasual/pino-rhythm.png",
+      "../images/GameImage/HyperCasual/pino-rhythm (2).png",
+      "../images/GameImage/HyperCasual/pino-rhythm (3).png",
+      "../images/GameImage/HyperCasual/pino-rhythm (4).png",
+      "../images/GameImage/HyperCasual/pino-rhythm (5).png"
+    ],
+    "about": [
+      "Tap to the rhythm as ice cream cubes drop, matching the beat perfectly to keep the combo going and rack up high scores.",
+      "I make this game during the time at Indigames Inc as a Gameplay, UX/UI, VFX Programmer.",
+      "Published by <a href=\"https://www.morinagamilk.co.jp/english/products/jp/icecream.php\" style=\"display: inline-block;\"> Morinaga Milk </a> . The game can be played by purchasing a Pino Ice Cream during a time-limited event."
+    ],
+    "explore_links": [
+      {
+        "link": "https://www.famitsu.com/news/202209/29277502.html",
+        "label": "Explore more..."
+      }
+    ]
+  }
+]

@@ -425,5 +425,37 @@
         "label": "Explore more..."
       }
     ]
+  },
+  {
+    "id": "level-tool",
+    "title": "Level Design Tools for Hyper-Casual Games",
+    "engine": "Unity Engine",
+    "genre": "Tool Development, Maintain, Web Interface",
+    "banner": "",
+    "timeline": [
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "UI/UX, VFX, Gameplay, API, Solution, Optimization",
+        "bullets": [
+          "Create a tool for constructing data, designing levels, and maintaining gameplay, ensuring seamless development and efficient workflow management.",
+          "Develop a responsive WebGL template and implement an API for the web interface to track and analyze player behavior seamlessly.",
+          "Collaborate with the game design team: Work alongside designers, artists, and other developers to ensure consistent and innovative implementation of game features and mechanics.",
+          "Optimize game performance and enhance VFX efficiency by reducing draw calls to ensure compatibility with the WebGL platform."
+        ]
+      }
+    ],
+    "videos": [
+      "../images/GameImage/HyperCasual/penguin-run.mp4",
+      "../images/GameImage/Tool/hitofudetaki-level-design-tool.mp4"
+    ],
+    "images": [
+      "../images/GameImage/HyperCasual/penguin-run.png",
+      "../images/GameImage/HyperCasual/penguin-run.png"
+    ],
+    "about": [
+      "I maintaining and Expand gameplay and realization complete gameplay from prototype. Supporting other member for game feature solution during the time at Indigames Inc as a Gameplay, Tool Developer."
+    ],
+    "explore_links": []
   }
 ]

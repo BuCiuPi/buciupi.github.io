@@ -46,7 +46,7 @@ async function loadProjectDetails() {
             title: project.title,
             engine: project.engine,
             genre: project.genre,
-            banner: project.banner,
+            banner_html: project.banner ? `<div class="modal-image-banner"><div class="active"><img src="${project.banner}" loading="lazy" alt="Image"></div></div>` : '',
             
             about_text: (project.about || []).map(p => `<p>${p}</p>`).join('\n'),
             

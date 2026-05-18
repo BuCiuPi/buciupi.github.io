@@ -13,14 +13,14 @@
   },
   {
     "category": "tool",
-    "modalId": "tool-development",
-    "link": "./assets/projects/tool-development.html",
+    "modalId": "level-tool",
+    "link": "./assets/projects/project-details.html?id=level-tool",
     "image": "./assets/images/ToolLogos/tool-development-logo.jpg",
     "imageStyle": "",
     "imageAlt": "Hyper-casual",
     "tech": "Unity",
     "tags": "Tool, Plugins",
-    "title": "Tools Development and More...",
+    "title": "Level Design Tools for Hyper-Casual Games",
     "description": "Developed Unity tools to enhance collaboration between 2D artists, 3D modelers, game designers, and programmers."
   },
   {

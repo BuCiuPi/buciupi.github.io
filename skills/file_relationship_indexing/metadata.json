@@ -1,7 +1,7 @@
 {
-  "title": "File Relationship Indexing Skill",
-  "summary": "This skill provides a python script to index file relationships (HTML, CSS) for the buciupi.github.io portfolio project. It maps internal and external dependencies.",
-  "timestamp": "2026-05-16T15:23:00Z",
+  "title": "File Relationship Indexing Skill (v2)",
+  "summary": "Indexes file relationships across HTML, CSS, and JSON data files. Maps internal and external dependencies including asset paths from project-details.json, projects.json, and other data files. Outputs a markdown document.",
+  "timestamp": "2026-05-18T15:58:00Z",
   "references": [
     "index_relationships.py",
     "file_relationships.md"

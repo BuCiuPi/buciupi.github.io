@@ -2,118 +2,158 @@ import json
 import os
 from pathlib import Path
 
-TEMPLATE = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} Details - NguyenTienLong's Portfolio</title>
-    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main>
-        <div class="main-content">
-            <article class="about active" style="padding: 15px; max-width: 1000px; margin: auto;">
-                <header>
-                    <h2 class="h2 article-title">{title}</h2>
-                </header>
+"""
+Project Page Generator Skill (v2 - Data-Driven)
 
-                <div class="blog-meta">
-                    <p class="blog-category">{engine}</p>
-                    <span class="dot"></span>
-                    <p>{genre}</p>
-                </div>
-                <br><hr class="half"><br>
+This skill adds a new project to the portfolio by:
+1. Adding an entry to assets/data/project-details.json (project content)
+2. Adding an entry to assets/data/projects.json (portfolio listing card)
 
-                <div class="about-text">
-                    <p>{description_1}</p>
-                    <p>{description_2}</p>
-                </div>
-                <br><hr class="half"><br>
+No standalone HTML files are generated — everything uses the shared
+project-details.html template that dynamically loads from JSON.
 
-                <div class="modal-image-banner">
-                    <div class="active">
-                        <img src="../images/GameImage/{folder}/{banner_image}" loading="lazy" alt="Banner Image">
-                    </div>
-                </div>
-
-                <div class="modal-explore">
-                    <button class="link-btn" onclick="OpenInNewTab('{play_link}')">
-                        <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
-                        <span>Play</span>
-                    </button>
-                    <button class="link-btn" onclick="OpenInNewTab('{explore_link}')">
-                        <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
-                        <span>Explore More..</span>
-                    </button>
-                </div>
-                <br><hr><br>
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-                        <h3 class="h3">{title}</h3>
-                    </div>
-                    <!-- Timeline details can be filled manually -->
-                </section>
-            </article>
-        </div>
-    </main>
-
-    <script>
-        function OpenInNewTab(url) {
-            window.open(url, '_blank').focus();
-        }
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
+Usage:
+  1. Create a config JSON file (see sample_config.json for format)
+  2. Run: python generate_project.py <config_file.json>
+  3. Or run without args to generate a sample_config.json template
 """
 
-def generate_page(config_path):
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+PROJECT_DETAILS_PATH = ROOT_DIR / "assets" / "data" / "project-details.json"
+PROJECTS_PATH = ROOT_DIR / "assets" / "data" / "projects.json"
+
+
+def load_json(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def save_json(path, data):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"  Updated: {path.relative_to(ROOT_DIR)}")
+
+
+def generate_project(config_path):
     with open(config_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-        
-    output_html = TEMPLATE.format(
-        title=data.get('title', 'Project Title'),
-        engine=data.get('engine', 'Unity Engine'),
-        genre=data.get('genre', 'Genre'),
-        description_1=data.get('description_1', 'Project Description 1'),
-        description_2=data.get('description_2', 'Project Description 2'),
-        folder=data.get('image_folder', 'SelfProject'),
-        banner_image=data.get('banner_image', 'banner.jpg'),
-        play_link=data.get('play_link', '#'),
-        explore_link=data.get('explore_link', '#')
-    )
-    
-    file_name = data.get('title').lower().replace(' ', '-') + '.html'
-    output_path = Path("../../assets/projects") / file_name
-    
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(output_html)
-        
-    print(f"Generated new project page: {output_path.resolve()}")
+        config = json.load(f)
+
+    project_id = config.get('id')
+    if not project_id:
+        print("Error: 'id' field is required in config.")
+        return
+
+    # --- 1. Add to project-details.json ---
+    details = load_json(PROJECT_DETAILS_PATH)
+
+    # Check for duplicate
+    if any(p.get('id') == project_id for p in details):
+        print(f"Warning: Project '{project_id}' already exists in project-details.json. Skipping.")
+    else:
+        detail_entry = {
+            "id": project_id,
+            "title": config.get("title", "New Project"),
+            "engine": config.get("engine", "Unity Engine"),
+            "genre": config.get("genre", ""),
+            "banner": config.get("banner", ""),
+            "timeline": config.get("timeline", []),
+            "videos": config.get("videos", []),
+            "images": config.get("images", []),
+            "about": config.get("about", []),
+            "explore_links": config.get("explore_links", [])
+        }
+        details.append(detail_entry)
+        save_json(PROJECT_DETAILS_PATH, details)
+
+    # --- 2. Add to projects.json ---
+    projects = load_json(PROJECTS_PATH)
+
+    if any(p.get('modalId') == project_id for p in projects):
+        print(f"Warning: Project '{project_id}' already exists in projects.json. Skipping.")
+    else:
+        card_entry = {
+            "category": config.get("category", "game"),
+            "modalId": project_id,
+            "link": f"./assets/projects/project-details.html?id={project_id}",
+            "image": config.get("card_image", ""),
+            "imageStyle": config.get("card_image_style", ""),
+            "imageAlt": project_id,
+            "tech": config.get("engine", "Unity"),
+            "tags": config.get("tags", ""),
+            "title": config.get("title", "New Project"),
+            "description": config.get("card_description", "")
+        }
+        projects.append(card_entry)
+        save_json(PROJECTS_PATH, projects)
+
+    print(f"\nProject '{project_id}' added successfully!")
+    print(f"View at: project-details.html?id={project_id}")
+
+
+def create_sample_config():
+    sample = {
+        "id": "my-new-game",
+        "title": "My New Game",
+        "category": "game",
+        "engine": "Unity Engine",
+        "genre": "Puzzle, Casual",
+        "tags": "Puzzle, Casual",
+        "banner": "../images/GameImage/SelfProject/banner.jpg",
+        "card_image": "./assets/images/GameImage/SelfProject/thumbnail.gif",
+        "card_image_style": "",
+        "card_description": "A short description for the portfolio card.",
+        "about": [
+            "First paragraph about the project.",
+            "Second paragraph about your role."
+        ],
+        "timeline": [
+            {
+                "title": "GamePlay Details",
+                "subtitle": "",
+                "role": "",
+                "bullets": [
+                    "Gameplay detail 1",
+                    "Gameplay detail 2"
+                ]
+            },
+            {
+                "title": "Main Responsibility",
+                "subtitle": "Unity, WebGL, Mobile",
+                "role": "UI/UX, Gameplay",
+                "bullets": [
+                    "Responsibility 1",
+                    "Responsibility 2"
+                ]
+            }
+        ],
+        "videos": [],
+        "images": [
+            "../images/GameImage/SelfProject/screenshot1.png",
+            "../images/GameImage/SelfProject/screenshot2.png"
+        ],
+        "explore_links": [
+            {
+                "link": "https://example.com/play",
+                "label": "Play Now"
+            }
+        ]
+    }
+
+    sample_path = Path(__file__).parent / "sample_config.json"
+    with open(sample_path, 'w', encoding='utf-8') as f:
+        json.dump(sample, f, indent=4, ensure_ascii=False)
+    print(f"Created {sample_path.name}")
+    print("Edit it with your project data, then run:")
+    print(f"  python {Path(__file__).name} {sample_path.name}")
+
 
 if __name__ == "__main__":
-    sample_config = Path("sample_config.json")
-    if not sample_config.exists():
-        with open(sample_config, 'w', encoding='utf-8') as f:
-            json.dump({
-                "title": "New Awesome Game",
-                "engine": "Unity Engine",
-                "genre": "Puzzle, Casual",
-                "description_1": "This is a new awesome game.",
-                "description_2": "I made this game as a self learning project.",
-                "image_folder": "SelfProject",
-                "banner_image": "banner.jpg",
-                "play_link": "https://example.com/play",
-                "explore_link": "https://example.com/explore"
-            }, f, indent=4)
-        print("Created sample_config.json. Modify it and run the script again to generate the page.")
+    import sys
+    if len(sys.argv) > 1:
+        config_file = Path(sys.argv[1])
+        if not config_file.exists():
+            print(f"Error: Config file '{config_file}' not found.")
+        else:
+            generate_project(config_file)
     else:
-        generate_page(sample_config)
+        create_sample_config()

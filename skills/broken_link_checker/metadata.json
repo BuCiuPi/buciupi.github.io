@@ -1,7 +1,7 @@
 {
-  "title": "Broken Link Checker Skill",
-  "summary": "This skill checks all internal links (href, src) within HTML files to ensure the referenced local files (images, css, scripts) actually exist on disk.",
-  "timestamp": "2026-05-16T15:25:00Z",
+  "title": "Broken Link Checker Skill (v2)",
+  "summary": "Checks all internal links in HTML files (href, src) and JSON data files (image/video/asset paths) to ensure all referenced local files actually exist on disk. Updated to support the data-driven architecture where asset paths live in JSON.",
+  "timestamp": "2026-05-18T15:58:00Z",
   "references": [
     "check_links.py"
   ]

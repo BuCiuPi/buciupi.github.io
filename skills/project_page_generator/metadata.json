@@ -1,7 +1,7 @@
 {
-  "title": "Project Page Generator Skill",
-  "summary": "This skill automatically scaffolds a new project HTML page based on a JSON config file, ensuring it matches the portfolio's template and styling.",
-  "timestamp": "2026-05-16T15:26:00Z",
+  "title": "Project Page Generator Skill (v2)",
+  "summary": "Adds new projects to the portfolio by inserting entries into project-details.json and projects.json. No standalone HTML files are created — everything uses the shared project-details.html template with dynamic JSON loading. Run with a config JSON file or without args to generate a sample template.",
+  "timestamp": "2026-05-18T15:57:00Z",
   "references": [
     "generate_project.py"
   ]

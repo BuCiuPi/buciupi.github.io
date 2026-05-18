@@ -1,0 +1,98 @@
+{
+  "aboutText": "I am a Game Developer & Technical Artist with 4+ years building cross-platform games in Unity and Unreal Engine. Specialized in real-time shaders, VFX pipelines, and internal tooling that reduced production time by 80% and reduce risk . Passionate about pushing visual quality and pipeline efficiency",
+  "services": [
+    {
+      "icon": "./assets/images/ToolLogos/unity-logo.png",
+      "iconClass": "unity-icon",
+      "title": "Unity Game Development",
+      "text": "2D, 3D, Mobile, WebGL"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/unreal-engine-logo.png",
+      "iconClass": "",
+      "title": "Unreal Engine Game Dev",
+      "text": "Window Platform"
+    },
+    {
+      "icon": "./assets/images/icon-design.svg",
+      "iconClass": "",
+      "title": "Shader Development",
+      "text": "Shader Graph, Custom Material, HLSL, GLSL"
+    },
+    {
+      "icon": "./assets/images/icon-dev.svg",
+      "iconClass": "",
+      "title": "Tool development",
+      "text": "Level design, asset importing, and improves game develop efficiency."
+    }
+  ],
+  "mainSkills": [
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "C#",
+        "C/C++",
+        "Python",
+        "GLSL",
+        "HLSL",
+        "Assembly"
+      ]
+    },
+    {
+      "category": "Tools",
+      "skills": [
+        "Maya",
+        "Blender",
+        "Substance(Designer/Painter)",
+        "PhotoShop"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "icon": "./assets/images/ToolLogos/unity-logo.png",
+      "alt": "unity logo",
+      "delay": "0"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/unreal-engine-logo.png",
+      "alt": "unreal engine logo",
+      "delay": "100"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/blender-logo.png",
+      "alt": "blender logo",
+      "delay": "200"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/githud-logo.png",
+      "alt": "github logo",
+      "delay": "300"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/photoshop-logo.png",
+      "alt": "photoshop-logo",
+      "delay": "400"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/trello-logo.png",
+      "alt": "trello-logo",
+      "delay": "500"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/maya-logo.png",
+      "alt": "maya logo",
+      "delay": "0"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/substance-designer-logo.png",
+      "alt": "substance designer logo",
+      "delay": "100"
+    },
+    {
+      "icon": "./assets/images/ToolLogos/substance-painter-logo.png",
+      "alt": "substance painter logo",
+      "delay": "200"
+    }
+  ]
+}

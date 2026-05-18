@@ -1,5 +1,41 @@
 [
   {
+    "category": "shader",
+    "modalId": "unity-shader",
+    "link": "./assets/projects/unity-shader.html",
+    "image": "./assets/images/GameImage/Shader/unity-shader-logo.gif",
+    "imageStyle": "",
+    "imageAlt": "unity-shader",
+    "tech": "Unity",
+    "tags": "Shader",
+    "title": "Shader & VFX",
+    "description": "Rendering pipeline, shaders for dynamic lighting, tessellation, and other effects."
+  },
+  {
+    "category": "tool",
+    "modalId": "tool-development",
+    "link": "./assets/projects/tool-development.html",
+    "image": "./assets/images/ToolLogos/tool-development-logo.jpg",
+    "imageStyle": "",
+    "imageAlt": "Hyper-casual",
+    "tech": "Unity",
+    "tags": "Tool, Plugins",
+    "title": "Tools Development and More...",
+    "description": "Developed Unity tools to enhance collaboration between 2D artists, 3D modelers, game designers, and programmers."
+  },
+  {
+    "category": "shader",
+    "modalId": "unreal-engine-shader",
+    "link": "./assets/projects/unreal-engine-shader.html",
+    "image": "./assets/images/GameImage/Shader/unreal-engine-shader.gif",
+    "imageStyle": "",
+    "imageAlt": "Unreal-engine-shader",
+    "tech": "Unreal Engine",
+    "tags": "Shader",
+    "title": "Unreal Engine Shader",
+    "description": "Post Progressing, Mapping, Tessellation, and other effects."
+  },
+  {
     "category": "game",
     "modalId": "murgen-horror",
     "link": "./assets/projects/project-details.html?id=murgen-horror",
@@ -60,18 +96,6 @@
     "description": "Run, collect weapons, level up your power, and defeat epic bosses in this fast-paced hyper-casual action game!"
   },
   {
-    "category": "shader",
-    "modalId": "unity-shader",
-    "link": "./assets/projects/unity-shader.html",
-    "image": "./assets/images/GameImage/Shader/unity-shader-logo.gif",
-    "imageStyle": "",
-    "imageAlt": "unity-shader",
-    "tech": "Unity",
-    "tags": "Shader",
-    "title": "Unity Shader",
-    "description": "Rendering pipeline, shaders for dynamic lighting, tessellation, and other effects."
-  },
-  {
     "category": "game",
     "modalId": "pino-rhythm",
     "link": "./assets/projects/project-details.html?id=pino-rhythm",
@@ -118,29 +142,5 @@
     "tags": "Shader, Render",
     "title": "DirectX 11 & HLSL",
     "description": "Rendering pipeline, shaders for dynamic lighting, tessellation, and other effects."
-  },
-  {
-    "category": "shader",
-    "modalId": "unreal-engine-shader",
-    "link": "./assets/projects/unreal-engine-shader.html",
-    "image": "./assets/images/GameImage/Shader/unreal-engine-shader.gif",
-    "imageStyle": "",
-    "imageAlt": "Unreal-engine-shader",
-    "tech": "Unreal Engine",
-    "tags": "Shader",
-    "title": "Unreal Engine Shader",
-    "description": "Post Progressing, Mapping, Tessellation, and other effects."
-  },
-  {
-    "category": "tool",
-    "modalId": "tool-development",
-    "link": "./assets/projects/tool-development.html",
-    "image": "./assets/images/ToolLogos/tool-development-logo.jpg",
-    "imageStyle": "",
-    "imageAlt": "Hyper-casual",
-    "tech": "Unity",
-    "tags": "Tool, Plugins",
-    "title": "Tools Development and More...",
-    "description": "Developed Unity tools to enhance collaboration between 2D artists, 3D modelers, game designers, and programmers."
   }
 ]

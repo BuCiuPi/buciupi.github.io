@@ -24,6 +24,8 @@ async function loadPartials() {
   await Promise.all(promises);
 
   await loadProjects();
+  await loadResume();
+  await loadAbout();
 
   // Initialize all logic and animations once DOM is fully populated
   initLogic();
@@ -61,6 +63,162 @@ async function loadProjects() {
     projectListContainer.innerHTML = projectHTML;
   } catch (e) {
     console.error('Error loading projects:', e);
+  }
+}
+
+async function loadResume() {
+  const experienceList = document.getElementById('experience-list');
+  const educationList = document.getElementById('education-list');
+  const skillsList = document.getElementById('skills-list');
+
+  if (!experienceList && !educationList && !skillsList) return;
+
+  try {
+    const response = await fetch('./assets/data/resume.json');
+    if (!response.ok) throw new Error('Failed to load resume data');
+    const resumeData = await response.json();
+
+    if (experienceList && resumeData.experience) {
+      const expTemplateRes = await fetch('./partials/resume/resume-experience-item.html');
+      const expDescTemplateRes = await fetch('./partials/resume/resume-experience-desc-item.html');
+      if (expTemplateRes.ok && expDescTemplateRes.ok) {
+        const expTemplate = await expTemplateRes.text();
+        const expDescTemplate = await expDescTemplateRes.text();
+        experienceList.innerHTML = resumeData.experience.map(item => {
+          let html = expTemplate;
+          for (const key in item) {
+            if (key === 'descriptions') {
+              const descHtml = item.descriptions.map(desc => expDescTemplate.replace(/\{\{text\}\}/g, desc)).join('');
+              html = html.replace(/\{\{descriptions\}\}/g, descHtml);
+            } else {
+              html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key]);
+            }
+          }
+          return html;
+        }).join('');
+      }
+    }
+
+    if (educationList && resumeData.education) {
+      const eduTemplateRes = await fetch('./partials/resume/resume-education-item.html');
+      const eduDescTemplateRes = await fetch('./partials/resume/resume-education-desc-item.html');
+      if (eduTemplateRes.ok && eduDescTemplateRes.ok) {
+        const eduTemplate = await eduTemplateRes.text();
+        const eduDescTemplate = await eduDescTemplateRes.text();
+        educationList.innerHTML = resumeData.education.map(item => {
+          let html = eduTemplate;
+          for (const key in item) {
+            if (key === 'descriptions') {
+              const descHtml = item.descriptions.map(desc => {
+                let dHtml = eduDescTemplate;
+                for (const dKey in desc) {
+                  dHtml = dHtml.replace(new RegExp(`\\{\\{${dKey}\\}\\}`, 'g'), desc[dKey]);
+                }
+                return dHtml;
+              }).join('');
+              html = html.replace(/\{\{descriptions\}\}/g, descHtml);
+            } else {
+              html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key]);
+            }
+          }
+          return html;
+        }).join('');
+      }
+    }
+
+    if (skillsList && resumeData.skills) {
+      const skillTemplateRes = await fetch('./partials/resume/resume-skill-item.html');
+      const skillDescTemplateRes = await fetch('./partials/resume/resume-skill-list-item.html');
+      if (skillTemplateRes.ok && skillDescTemplateRes.ok) {
+        const skillTemplate = await skillTemplateRes.text();
+        const skillDescTemplate = await skillDescTemplateRes.text();
+        skillsList.innerHTML = resumeData.skills.map(item => {
+          let html = skillTemplate;
+          for (const key in item) {
+            if (key === 'skills') {
+              const skillsHtml = item.skills.map(skill => skillDescTemplate.replace(/\{\{skill\}\}/g, skill)).join('');
+              html = html.replace(/\{\{skills\}\}/g, skillsHtml);
+            } else {
+              html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key]);
+            }
+          }
+          return html;
+        }).join('');
+      }
+    }
+  } catch (e) {
+    console.error('Error loading resume:', e);
+  }
+}
+
+async function loadAbout() {
+  const aboutText = document.getElementById('about-text');
+  const servicesList = document.getElementById('about-services-list');
+  const mainSkillsList = document.getElementById('about-skills-list');
+  const toolsList = document.getElementById('about-tools-list');
+
+  if (!aboutText && !servicesList && !mainSkillsList && !toolsList) return;
+
+  try {
+    const response = await fetch('./assets/data/about.json');
+    if (!response.ok) throw new Error('Failed to load about data');
+    const aboutData = await response.json();
+
+    if (aboutText && aboutData.aboutText) {
+      aboutText.innerText = aboutData.aboutText;
+    }
+
+    if (servicesList && aboutData.services) {
+      const srvTemplateRes = await fetch('./partials/about/about-service-item.html');
+      if (srvTemplateRes.ok) {
+        const srvTemplate = await srvTemplateRes.text();
+        servicesList.innerHTML = aboutData.services.map(item => {
+          let html = srvTemplate;
+          for (const key in item) {
+            html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key] || '');
+          }
+          html = html.replace(/class=""/g, '');
+          return html;
+        }).join('');
+      }
+    }
+
+    if (mainSkillsList && aboutData.mainSkills) {
+      const skillTemplateRes = await fetch('./partials/about/about-skill-item.html');
+      const skillDescTemplateRes = await fetch('./partials/about/about-skill-list-item.html');
+      if (skillTemplateRes.ok && skillDescTemplateRes.ok) {
+        const skillTemplate = await skillTemplateRes.text();
+        const skillDescTemplate = await skillDescTemplateRes.text();
+        mainSkillsList.innerHTML = aboutData.mainSkills.map(item => {
+          let html = skillTemplate;
+          for (const key in item) {
+            if (key === 'skills') {
+              const skillsHtml = item.skills.map(skill => skillDescTemplate.replace(/\{\{skill\}\}/g, skill)).join('');
+              html = html.replace(/\{\{skills\}\}/g, skillsHtml);
+            } else {
+              html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key]);
+            }
+          }
+          return html;
+        }).join('');
+      }
+    }
+
+    if (toolsList && aboutData.tools) {
+      const toolTemplateRes = await fetch('./partials/about/about-tool-item.html');
+      if (toolTemplateRes.ok) {
+        const toolTemplate = await toolTemplateRes.text();
+        toolsList.innerHTML = aboutData.tools.map(item => {
+          let html = toolTemplate;
+          for (const key in item) {
+            html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), item[key]);
+          }
+          return html;
+        }).join('');
+      }
+    }
+  } catch (e) {
+    console.error('Error loading about:', e);
   }
 }
 

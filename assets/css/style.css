@@ -637,21 +637,17 @@ main {
 
 .main-skill-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
   margin: 0 -15px;
   padding: 25px 15px;
   padding-bottom: 35px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  overflow-x: hidden;
 }
 
 .main-skill-item {
-  min-width: 25%;
-  scroll-snap-align: center;
+  width: 100%;
 }
 
 .main-skill-title-box {

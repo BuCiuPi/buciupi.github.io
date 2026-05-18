@@ -1,0 +1,122 @@
+{
+  "experience": [
+    {
+      "company": "Yield Guild Game",
+      "role": "Game Developer cum Technical Artist",
+      "duration": "Nov 2024 - Now",
+      "descriptions": [
+        "Developed games and internal tools to optimize production workflows.",
+        "Designed and implemented automation tools that reduced production time by up to 80% while mitigating risks from human factors, covering import/export workflows, data and asset management, debugging, and testing.",
+        "Provided technical support and troubleshooting across 2D, 3D, and VFX teams to resolve pipeline and in-engine issues.",
+        "Created custom shaders for in-game visual effects, including shading models, displacement, procedural patterns, and mathematically driven effects.",
+        "Identified platform constraints and asset-to-runtime issues, proposing effective solutions to enable optimal technical and visual outcomes for each scenario.",
+        "Collaborated closely with Game Designers to develop special gameplay mechanics and enhance overall player experience."
+      ]
+    },
+    {
+      "company": "Indigames Inc.",
+      "role": "Junior Game Developer",
+      "duration": "Jun 2022 — Arp 2024",
+      "descriptions": [
+        "Developed games using the Unity Engine.",
+        "Designed game shaders, utilizing ShaderGraph, ShaderLab, HLSL, and GLSL.",
+        "Wrote Unity Editor tools, including data import, level design, game data management, testing, and debugging.",
+        "Expand gameplay and port existing projects from Mobile and PC to WebGL.",
+        "Collaborated with a Game Designer to customize game levels and improve gameplay.",
+        "Created games using both Unreal Engine 5 and Unreal Engine for Fortnite using Verse."
+      ]
+    },
+    {
+      "company": "Indigames Inc.",
+      "role": "Trainee Game Developer",
+      "duration": "Arp 2022 — Jul 2022",
+      "descriptions": [
+        "Gained expertise in the entire game development lifecycle, from pre-production to post-production.",
+        "Utilized Git, GitHub, and GitLab for seamless team collaboration.",
+        "Developed mini-games using Unity Learn to hone skills.",
+        "Engaged in game development training courses."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bachelor of Software Engineering - HUTECH",
+      "duration": "2018 — 2023",
+      "descriptions": [
+        {
+          "label": "GPA",
+          "text": "3.26/4"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Language",
+      "skills": [
+        "C/C++/C#",
+        "Python",
+        "JavaScript",
+        "HTML",
+        "Java",
+        "Assembly"
+      ]
+    },
+    {
+      "category": "Shading Language",
+      "skills": [
+        "ShaderLab",
+        "Shader Graph",
+        "HLSL",
+        "GLSL",
+        "CSS"
+      ]
+    },
+    {
+      "category": "IDE & Engine",
+      "skills": [
+        "Unity",
+        "Unreal Engine",
+        "UEFN",
+        "Directx",
+        "OpenGL",
+        "VS Code",
+        "Visual Studio",
+        "Rider"
+      ]
+    },
+    {
+      "category": "Tool",
+      "skills": [
+        "PhotoShop",
+        "Maya",
+        "Blender",
+        "Substance Designer",
+        "Substance Painter",
+        "Jira",
+        "Notion",
+        "Trello",
+        "Asana",
+        "Linear",
+        "Git",
+        "Github",
+        "Gitlab",
+        "BitBucket",
+        "GithubProject",
+        "Jenkins"
+      ]
+    },
+    {
+      "category": "Principle",
+      "skills": [
+        "OOP",
+        "ECS",
+        "Game DesignPatterns",
+        "KISS",
+        "DRY",
+        "SOLID",
+        "YAGNI"
+      ]
+    }
+  ]
+}

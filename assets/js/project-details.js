@@ -31,14 +31,16 @@ async function loadProjectDetails() {
             timelineTemplateStr,
             videoTemplateStr,
             imageColTemplateStr,
-            imageItemTemplateStr
+            imageItemTemplateStr,
+            lightboxTemplateStr
         ] = await Promise.all([
             fetchTemplate('../../partials/portfolio/portfolio_project-details.html'),
             fetchTemplate('../../partials/portfolio/project-details/project-details-explore.html'),
             fetchTemplate('../../partials/portfolio/project-details/project-details-timeline.html'),
             fetchTemplate('../../partials/portfolio/project-details/project-details-video.html'),
             fetchTemplate('../../partials/portfolio/project-details/project-details-image-col.html'),
-            fetchTemplate('../../partials/portfolio/project-details/project-details-image-item.html')
+            fetchTemplate('../../partials/portfolio/project-details/project-details-image-item.html'),
+            fetchTemplate('../../partials/portfolio/project-details/project-details-lightbox.html')
         ]);
 
         // Format the JSON data back into HTML using templates
@@ -116,6 +118,12 @@ async function loadProjectDetails() {
         }
 
         document.getElementById('project-details-container').innerHTML = html;
+
+        // Inject lightbox from partial (only once)
+        if (!document.getElementById('lightbox-overlay') && lightboxTemplateStr) {
+            document.body.insertAdjacentHTML('beforeend', lightboxTemplateStr);
+            initLightboxEvents();
+        }
     } catch (e) {
         console.error(e);
         document.getElementById('project-details-container').innerHTML = '<p>Error loading project details.</p>';
@@ -124,6 +132,42 @@ async function loadProjectDetails() {
 
 function OpenInNewTab(url) {
     window.open(url, '_blank').focus();
+}
+
+// ---- Lightbox ----
+
+function initLightboxEvents() {
+    const overlay = document.getElementById('lightbox-overlay');
+    if (!overlay) return;
+
+    // Close on overlay background click or close button
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay || e.target.closest('#lightbox-close')) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+}
+
+function openLightbox(src) {
+    const overlay = document.getElementById('lightbox-overlay');
+    const img = document.getElementById('lightbox-img');
+    if (!overlay || !img) return;
+    img.src = src;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const overlay = document.getElementById('lightbox-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 }
 
 window.addEventListener("DOMContentLoaded", loadProjectDetails);

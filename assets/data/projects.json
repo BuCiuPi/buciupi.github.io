@@ -1,5 +1,17 @@
 [
   {
+    "category": "game",
+    "modalId": "lolland",
+    "link": "./assets/projects/project-details.html?id=lolland",
+    "image": "./assets/images/lolland/lolland.gif",
+    "imageStyle": "",
+    "imageAlt": "lolland",
+    "tech": "Unity",
+    "tags": "Web3, Board",
+    "title": "LOL LAND",
+    "description": "A Web3-integrated social board game built on a Monopoly game base, featuring custom themed maps, collectible NFT characters, weekly tournaments, and prediction mini-games."
+  },
+  {
     "category": "shader",
     "modalId": "unity-shader",
     "link": "./assets/projects/unity-shader.html",

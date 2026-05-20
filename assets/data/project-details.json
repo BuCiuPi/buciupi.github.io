@@ -457,5 +457,66 @@
       "I maintaining and Expand gameplay and realization complete gameplay from prototype. Supporting other member for game feature solution during the time at Indigames Inc as a Gameplay, Tool Developer."
     ],
     "explore_links": []
+  },
+  {
+    "id": "lolland",
+    "title": "LOL LAND",
+    "engine": "Unity Engine",
+    "genre": "Social Board Game, Web3",
+    "banner": "../images/lolland/lolland-photo (10).png",
+    "timeline": [
+      {
+        "title": "Gameplay & Features",
+        "subtitle": "",
+        "role": "",
+        "bullets": [
+          "Monopoly Game Base: Multi-themed game boards based on Monopoly mechanics, including Honey Bearist (nature/camping), Gigachad Bat (baseball stadium), and retro-synthwave themes.",
+          "Web3 Prediction Mechanics: Real-time Ethereum price guessing mini-game ('Guess Price Up or Down') integrated directly into the gameplay loop.",
+          "NFT Characters & Customization: Gallery of collectible 3D NFT characters (Flipper, Jarvis, Mira, etc.) with customizable rarity-based avatar outfits.",
+          "Weekly Tournaments: Global leaderboard system for weekly competitions with tiered rewards based on multipliers."
+        ]
+      },
+      {
+        "title": "Main Responsibility",
+        "subtitle": "Unity, WebGL, Mobile",
+        "role": "Gameplay, UI/UX, VFX, Shaders",
+        "bullets": [
+          "Developed core board-gameplay logic, roll mechanics, and state management using Unity WebGL.",
+          "Integrated complex UI layouts for the Weekly Tournaments, NFT character showcase, and in-game Store/Shop.",
+          "Optimized WebGL builds to minimize asset size and load times, ensuring smooth performance directly in browser environments.",
+          "Created custom shaders and VFX for interactive tiles, board transitions, and prediction mini-game interfaces.",
+          "Implemented the UI and data integration for the real-time ETH price tracker and voting system."
+        ]
+      }
+    ],
+    "videos": [
+      "../images/lolland/lolland-video.mp4",
+      "../images/lolland/lolland-video (2).mp4",
+      "../images/lolland/lolland-video (3).mp4",
+      "../images/lolland/lolland-video (4).mp4",
+      "../images/lolland/lolland-video (5).mp4"
+    ],
+    "images": [
+      "../images/lolland/lolland-photo.png",
+      "../images/lolland/lolland-photo (2).png",
+      "../images/lolland/lolland-photo (3).png",
+      "../images/lolland/lolland-photo (4).png",
+      "../images/lolland/lolland-photo (5).png",
+      "../images/lolland/lolland-photo (6).png",
+      "../images/lolland/lolland-photo (7).jpg",
+      "../images/lolland/lolland-photo (8).jpg",
+      "../images/lolland/lolland-photo (9).png",
+      "../images/lolland/lolland-photo (10).png"
+    ],
+    "about": [
+      "LOL LAND is a fast-paced, browser-based Web3 social board game built on a Monopoly game base where players roll dice to navigate boards, collect symbols, and compete for rewards. It combines casual social casino mechanics with NFT ownership and prediction mini-games like guessing ETH price movements.",
+      "I worked on this game during my time at Yield Guild Games as a Game Developer and Technical Artist, responsible for developing gameplay mechanics, integrating user interfaces, and creating shaders/VFX."
+    ],
+    "explore_links": [
+      {
+        "link": "https://www.lol.land",
+        "label": "Visit Website"
+      }
+    ]
   }
 ]

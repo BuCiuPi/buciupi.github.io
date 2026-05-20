@@ -1,0 +1,8 @@
+{
+  "title": "GIF Generator Skill (v1)",
+  "summary": "Converts video files (e.g., MP4) into web-optimized, resized, and down-sampled GIFs suitable for animated portfolio listing card previews.",
+  "timestamp": "2026-05-20T21:32:00Z",
+  "references": [
+    "generate_gif.py"
+  ]
+}

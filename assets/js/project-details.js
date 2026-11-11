@@ -23,7 +23,7 @@ async function loadProjectDetails() {
         }
 
         // Update title
-        document.title = `${project.title} - NguyenTienLong's Portfolio`;
+        document.title = `${project.title} - Long Nguyen's Portfolio`;
 
         const [
             mainTemplateStr,
@@ -108,7 +108,7 @@ async function loadProjectDetails() {
             // special handling for videos so we hide the HR if there are no videos
             if (key === 'videos') {
                 if (!formattedProject[key]) {
-                    html = html.replace(/\{\{videos\}\}\s*<br>\s*<hr class="half">\s*<br>/g, '');
+                    html = html.replace(/<br>\s*<hr class="half">\s*<br>\s*\{\{videos\}\}/g, '');
                 } else {
                     html = html.replace(/\{\{videos\}\}/g, formattedProject[key]);
                 }
@@ -118,6 +118,10 @@ async function loadProjectDetails() {
         }
 
         document.getElementById('project-details-container').innerHTML = html;
+
+        if (!(project.images || []).length) {
+            document.querySelector('.project-gallery')?.remove();
+        }
 
         // Inject lightbox from partial (only once)
         if (!document.getElementById('lightbox-overlay') && lightboxTemplateStr) {

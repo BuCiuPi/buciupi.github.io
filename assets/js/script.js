@@ -87,7 +87,13 @@ async function loadResume() {
         experienceList.innerHTML = resumeData.experience.map(item => {
           let html = expTemplate;
           for (const key in item) {
-            if (key === 'descriptions') {
+            if (key === 'groups') {
+              const groupsHtml = item.groups.map(group =>
+                `<li class="timeline-group">${group.label}</li>` +
+                group.bullets.map(bullet => expDescTemplate.replace(/\{\{text\}\}/g, bullet)).join('')
+              ).join('');
+              html = html.replace(/\{\{descriptions\}\}/g, groupsHtml);
+            } else if (key === 'descriptions') {
               const descHtml = item.descriptions.map(desc => expDescTemplate.replace(/\{\{text\}\}/g, desc)).join('');
               html = html.replace(/\{\{descriptions\}\}/g, descHtml);
             } else {

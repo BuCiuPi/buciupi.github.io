@@ -1,47 +1,61 @@
 {
   "experience": [
     {
-      "company": "Yield Guild Game",
+      "company": "Hypereel – Yield Guild Games",
       "role": "Game Developer & Technical Artist",
-      "duration": "Nov 2024 - Now",
-      "descriptions": [
-        "Developed games and internal tools to optimize production workflows.",
-        "Designed and implemented automation tools that reduced production time by up to 80% while mitigating risks from human factors, covering import/export workflows, data and asset management, debugging, and testing.",
-        "Provided technical support and troubleshooting across 2D, 3D, and VFX teams to resolve pipeline and in-engine issues.",
-        "Created custom shaders for in-game visual effects, including shading models, displacement, procedural patterns, and mathematically driven effects.",
-        "Identified platform constraints and asset-to-runtime issues, proposing effective solutions to enable optimal technical and visual outcomes for each scenario.",
-        "Collaborated closely with Game Designers to develop special gameplay mechanics and enhance overall player experience."
+      "duration": "Nov 2024 – Present · Part of Yield Guild Games until January 2026 · Full-time · On-site · Ho Chi Minh City",
+      "groups": [
+        {
+          "label": "Building",
+          "bullets": [
+            "Developed gameplay, UI, and internal Unity tools for a live WebGL sports board game.",
+            "Main contributor to its match mini-game, including its skill and special card systems.",
+            "Co-developed the multi-board game flow and built its treasure services across 10 boards.",
+            "Delivered gameplay and UI for 20 shipped mini-game maps on a Web3 social board game, at about one map every 3 weeks."
+          ]
+        },
+        {
+          "label": "Visual",
+          "bullets": [
+            "Designed 4 featured effects per map plus a reusable environment-effect library shared across all 20 maps, using custom shaders (displacement, procedural patterns, math-driven effects).",
+            "Created VFX for the sports game’s skill and special cards.",
+            "Kept the Web3 game’s WebGL builds above 60 FPS and draw calls below 300 by profiling with Unity Profiler, Frame Debugger, and RenderDoc, then optimizing with LOD and texture compression."
+          ]
+        },
+        {
+          "label": "Workflow",
+          "bullets": [
+            "Designed and implemented automation tools that shortened map integration from about two months to about one week across data, assets, API wiring, and gameplay logic, and reduced human error in import/export, debugging, and testing.",
+            "Supported the 2D, 3D, and VFX teams by resolving pipeline, in-engine, platform, and asset-to-runtime issues.",
+            "Worked with game designers to build new gameplay mechanics."
+          ]
+        },
+        {
+          "label": "Pipeline",
+          "bullets": [
+            "Built Unity asset pipeline tools for avatars and character models, with a batch-mode import that pushes review branches.",
+            "Created QA and authoring tools: Card Preview, In-Game Avatar Changer, and Walk Plan route authoring in the Map Tool.",
+            "Extended GUID asset tools with GPU duplicate texture detection and a command interface for automation."
+          ]
+        }
       ]
     },
     {
       "company": "Indigames Inc.",
-      "role": "Junior Game Developer",
-      "duration": "Jun 2022 — Arp 2024",
+      "role": "Game Developer",
+      "duration": "Apr 2022 – Apr 2024 · Full-time · On-site · Ho Chi Minh City",
       "descriptions": [
-        "Developed games using the Unity Engine.",
-        "Designed game shaders, utilizing ShaderGraph, ShaderLab, HLSL, and GLSL.",
-        "Wrote Unity Editor tools, including data import, level design, game data management, testing, and debugging.",
-        "Expand gameplay and port existing projects from Mobile and PC to WebGL.",
-        "Collaborated with a Game Designer to customize game levels and improve gameplay.",
-        "Created games using both Unreal Engine 5 and Unreal Engine for Fortnite using Verse."
-      ]
-    },
-    {
-      "company": "Indigames Inc.",
-      "role": "Trainee Game Developer",
-      "duration": "Arp 2022 — Jul 2022",
-      "descriptions": [
-        "Gained expertise in the entire game development lifecycle, from pre-production to post-production.",
-        "Utilized Git, GitHub, and GitLab for seamless team collaboration.",
-        "Developed mini-games using Unity Learn to hone skills.",
-        "Engaged in game development training courses."
+        "Designed game shaders in Shader Graph, ShaderLab, HLSL, and GLSL.",
+        "Built Unity Editor tools for level design, game data, testing, and debugging.",
+        "Developed games in Unity, Unreal Engine 5, and Unreal Editor for Fortnite (UEFN) with Verse.",
+        "Ported existing mobile and PC projects to WebGL and extended their gameplay."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Bachelor of Software Engineering - HUTECH",
-      "duration": "2018 — 2023",
+      "institution": "Bachelor of Software Engineering – Ho Chi Minh City University of Technology (HUTECH)",
+      "duration": "2018 – 2023",
       "descriptions": [
         {
           "label": "GPA",
@@ -52,70 +66,83 @@
   ],
   "skills": [
     {
-      "category": "Language",
+      "category": "Shading",
+      "skills": [
+        "HLSL",
+        "GLSL",
+        "ShaderLab",
+        "Shader Graph",
+        "Raymarching / SDF"
+      ]
+    },
+    {
+      "category": "VFX & Rendering",
+      "skills": [
+        "Particle System",
+        "VFX Graph",
+        "Niagara",
+        "URP",
+        "Post-processing",
+        "Sprite Rigging"
+      ]
+    },
+    {
+      "category": "Art Tools",
+      "skills": [
+        "Blender",
+        "Maya",
+        "Photoshop",
+        "Substance Designer",
+        "Substance Painter"
+      ]
+    },
+    {
+      "category": "Engines",
+      "skills": [
+        "Unity",
+        "Unreal Engine 5",
+        "UEFN"
+      ]
+    },
+    {
+      "category": "Graphics APIs",
+      "skills": [
+        "DirectX 11",
+        "OpenGL"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "skills": [
+        "Unity Profiler",
+        "Frame Debugger",
+        "RenderDoc",
+        "Draw-call Reduction",
+        "LOD",
+        "Texture Compression",
+        "WebGL Performance"
+      ]
+    },
+    {
+      "category": "Pipeline & Tools",
+      "skills": [
+        "Unity Editor Scripting",
+        "ScriptableObject",
+        "Object Pooling",
+        "Batch-mode CLI",
+        "Python Automation",
+        "AI-assisted Workflows",
+        "Git",
+        "Jenkins",
+        "Jira"
+      ]
+    },
+    {
+      "category": "Languages",
       "skills": [
         "C/C++/C#",
         "Python",
-        "JavaScript",
-        "HTML",
-        "Java",
-        "Assembly"
-      ]
-    },
-    {
-      "category": "Shading Language",
-      "skills": [
-        "ShaderLab",
-        "Shader Graph",
-        "HLSL",
-        "GLSL",
-        "CSS"
-      ]
-    },
-    {
-      "category": "IDE & Engine",
-      "skills": [
-        "Unity",
-        "Unreal Engine",
-        "UEFN",
-        "Directx",
-        "OpenGL",
-        "VS Code",
-        "Visual Studio",
-        "Rider"
-      ]
-    },
-    {
-      "category": "Tool",
-      "skills": [
-        "PhotoShop",
-        "Maya",
-        "Blender",
-        "Substance Designer",
-        "Substance Painter",
-        "Jira",
-        "Notion",
-        "Trello",
-        "Asana",
-        "Linear",
-        "Git",
-        "Github",
-        "Gitlab",
-        "BitBucket",
-        "GithubProject",
-        "Jenkins"
-      ]
-    },
-    {
-      "category": "Principle",
-      "skills": [
-        "OOP",
-        "ECS",
-        "Game DesignPatterns",
-        "KISS",
-        "DRY",
-        "SOLID",
-        "YAGNI"
+        "JavaScript"
       ]
     }
   ]

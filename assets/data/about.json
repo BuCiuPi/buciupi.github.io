@@ -1,5 +1,5 @@
 {
-  "aboutText": "I am a Game Developer & Technical Artist with 4+ years building cross-platform games in Unity and Unreal Engine. Specialized in real-time shaders, VFX pipelines, and internal tooling that reduced production time by 80% and reduce risk . Passionate about pushing visual quality and pipeline efficiency",
+  "aboutText": "Technical artist with a software engineering background and 4+ years building cross-platform games (mobile, PC, WebGL) in Unity and Unreal Engine, connecting art and engineering through real-time shaders, VFX pipelines, performance optimization, and Unity Editor tools, including AI-assisted workflows.",
   "services": [
     {
       "icon": "./assets/images/ToolLogos/unity-logo.png",
@@ -28,23 +28,21 @@
   ],
   "mainSkills": [
     {
-      "category": "Programming Languages",
+      "category": "Languages",
       "skills": [
-        "C#",
-        "C/C++",
+        "C/C++/C#",
         "Python",
-        "GLSL",
-        "HLSL",
-        "Assembly"
+        "JavaScript"
       ]
     },
     {
-      "category": "Tools",
+      "category": "Art Tools",
       "skills": [
-        "Maya",
         "Blender",
-        "Substance(Designer/Painter)",
-        "PhotoShop"
+        "Maya",
+        "Photoshop",
+        "Substance Designer",
+        "Substance Painter"
       ]
     }
   ],

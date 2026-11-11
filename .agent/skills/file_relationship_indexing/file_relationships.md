@@ -287,7 +287,7 @@ This document maps out the file dependencies within the project.
 - [External] https://www.linkedin.com/in/nguyenlong147/
 - [External] mailto:nguyentienlong147@gmail.com
 - [External] tel:+84397475616
-- [Internal] `./assets/Resume/NGUYENTIENLONG-Resume.pdf`
+- [Internal] `./assets/Resume/Long_Nguyen_Technical_Artist_CV.pdf`
 - [Internal] `./assets/css/animation.css`
 - [Internal] `./assets/css/style.css`
 - [Internal] `./assets/images/GameImage/HyperCasual/FireFireFire.gif`

@@ -7,15 +7,12 @@
         <h2 class="h2 article-title">Resume</h2>
     </header>
 
-    <hr style="width: 50%; border-color: var(--onyx);">
-    <a href="./assets/Resume/NGUYENTIENLONG-Resume.pdf" style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="./assets/Resume/Long_Nguyen_Technical_Artist_CV.pdf" download>
         <button class="link-btn">
             <img src="./assets/images/icon-design.svg" alt="">
-            <h3>Download My Resume!..</h3>
+            <h3>Download my CV (PDF)</h3>
         </button>
     </a>
-    <hr style="width: 50%; border-color: var(--onyx);">
-    <br>
 
     <section class="timeline fade-in-up">
 
@@ -32,6 +29,168 @@
 
     </section>
 
+    <!--
+  - Featured pipeline
+-->
+    <section class="cv-section">
+
+        <h3 class="h3 service-title">Featured Pipeline</h3>
+
+        <div class="cv-panel">
+            <div class="cv-panel-head">
+                <h4 class="h4">AI Game VFX: Effect Pipeline – Unity 6 (URP)</h4>
+                <p class="cv-meta">Personal project · 2026</p>
+            </div>
+
+            <p>An engine-independent VFX knowledge base and pipeline; each effect is described as data and built into engine assets.</p>
+
+            <ol class="cv-flow">
+                <li><strong>Textures</strong><span>AI and library</span></li>
+                <li><strong>Effect data</strong><span>JSON specs</span></li>
+                <li><strong>Editor builder</strong><span>Prefabs</span></li>
+                <li><strong>Validation</strong><span>Budgets, art rules</span></li>
+                <li><strong>Batch CLI</strong><span>Builds, tests</span></li>
+            </ol>
+
+            <ul class="timeline-text">
+                <li>Created a generic Unity Editor builder that generates effect prefabs from JSON specs and checks performance budgets and art rules on every build.</li>
+                <li>Built a VFX settings database (2,478 effects, 8,414 layers) and a 2,511-image texture library, with Python tools to query and audit them.</li>
+                <li>Built a 120-effect set with the pipeline.</li>
+                <li>Automated validation, builds, and tests through a Unity batch-mode CLI.</li>
+                <li>Integrated AI image generation (Gemini) and AI coding agents (Claude Code) into the art and engineering workflow.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--
+  - Shaders and rendering
+-->
+    <section class="cv-section">
+
+        <h3 class="h3 service-title">Shaders &amp; Rendering</h3>
+
+        <ul class="cv-grid cv-grid-3">
+            <li class="cv-card" data-accent="ind">
+                <h4 class="h4">Unity Shaders &amp; VFX</h4>
+                <a class="cv-link" href="./assets/projects/unity-shader.html">View project</a>
+                <ul class="timeline-text">
+                    <li><b>Shaders:</b> shell texturing, hex shield, force field, hologram mapping, stylized foliage, toon water, pixelate and toon with shadow mapping</li>
+                    <li><b>VFX:</b> VFX Graph particles, sword slash trail, healing spell, electric VFX, fractured sphere</li>
+                    <li><b>After Cyanilux tutorials:</b> holofoil card, book flipping</li>
+                    <li><b>Tools:</b> Shader Graph, ShaderLab, GLSL, HLSL</li>
+                </ul>
+            </li>
+            <li class="cv-card" data-accent="hot">
+                <h4 class="h4">Unreal Engine 5 Custom Materials</h4>
+                <a class="cv-link" href="./assets/projects/unreal-engine-shader.html">View project</a>
+                <ul class="timeline-text">
+                    <li><b>Shaders:</b> vertex displacement, texture packing, interior mapping, toon shading, tessellation, procedural hex grid</li>
+                    <li><b>Post-processing:</b> blur, color filtering, lens masking, rain drops and drips, underwater with caustics and decals</li>
+                </ul>
+            </li>
+            <li class="cv-card" data-accent="teal">
+                <h4 class="h4">DirectX 11 Render Pipeline</h4>
+                <a class="cv-link" href="./assets/projects/directx11.html">View project</a>
+                <ul class="timeline-text">
+                    <li><b>Rendering:</b> forward and deferred, PBR lighting, shadow mapping, SSAO, compute-shader blur</li>
+                    <li><b>HLSL:</b> vertex, compute, geometry, pixel, tessellation</li>
+                    <li><b>Techniques:</b> terrain layers, water displacement, GPU instancing, occlusion culling, stencil and planar projection, billboards, texture packing</li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--
+  - Artist tools
+-->
+    <section class="cv-section">
+
+        <h3 class="h3 service-title">Artist Tools</h3>
+
+        <ul class="cv-grid cv-grid-2">
+            <li class="cv-card" data-accent="hot">
+                <h4 class="h4">ArtWorkflow</h4>
+                <p class="cv-meta">AI map art tool · Python</p>
+                <p class="cv-chips"><span>Large map</span><span>Tiles</span><span>ChatGPT</span><span>Best seam</span></p>
+                <p>Cuts a large map into overlapping tiles, refines each in ChatGPT, and rejoins them along the best seam, with versions and approvals.</p>
+            </li>
+            <li class="cv-card" data-accent="hot">
+                <h4 class="h4">Image to PSD</h4>
+                <p class="cv-meta">Layer rebuilder · Python</p>
+                <p class="cv-chips"><span>Flat image</span><span>RapidOCR</span><span>Type layers</span><span>PSD</span></p>
+                <p>Turns a flat design image into a layered Photoshop file with native type layers, using offline RapidOCR. Editor and CLI.</p>
+            </li>
+            <li class="cv-card" data-accent="ind">
+                <h4 class="h4">Asset Import Pipeline</h4>
+                <p class="cv-meta">Unity Editor · Batch mode</p>
+                <p class="cv-chips"><span>Art folder</span><span>Validate</span><span>Prefab</span><span>PR branch</span></p>
+                <p>Imports avatars and characters, builds prefabs and materials, and updates data and Addressables; batch mode pushes a review branch.</p>
+            </li>
+            <li class="cv-card" data-accent="ind">
+                <h4 class="h4">Asset Health Toolkit</h4>
+                <p class="cv-meta">Unity Editor · CLI</p>
+                <p class="cv-chips"><span>Scan</span><span>References</span><span>Duplicates</span><span>CLI</span></p>
+                <p>Reference Hunter, Duplicate Folder, and a GPU duplicate texture finder, with 10 CLI commands for scanning, repointing, and automation.</p>
+            </li>
+            <li class="cv-card" data-accent="ind">
+                <h4 class="h4">Rendering &amp; Texture Tools</h4>
+                <p class="cv-meta">Unity Editor</p>
+                <p class="cv-chips"><span>Anim clips</span><span>Sample</span><span>Bounds</span></p>
+                <p>Mesh Bounds computes SkinnedMeshRenderer bounds from animation clips; Image Channel Packing packs up to 4 masks into a texture.</p>
+            </li>
+            <li class="cv-card" data-accent="ind">
+                <h4 class="h4">QA &amp; Authoring Tools</h4>
+                <p class="cv-meta">Unity Editor</p>
+                <p class="cv-chips"><span>Routes</span><span>Validate</span><span>Heatmap</span></p>
+                <p>Card Preview, In-Game Avatar Changer, level design tools, and Walk Plan route generation with validation and a road-use heatmap.</p>
+            </li>
+            <li class="cv-card" data-accent="teal">
+                <h4 class="h4">Socket Automation &amp; Rigging Guide</h4>
+                <p class="cv-meta">Python · Blender to Unity · EN &amp; VI</p>
+                <p class="cv-chips"><span>SK_ + SM_</span><span>Parent, align</span><span>Batch export</span></p>
+                <p>Automates socket parenting, alignment, renaming, and batch export; the guide covers hierarchy, LRA, skinning limits, and FBX export.</p>
+            </li>
+            <li class="cv-card" data-accent="teal">
+                <h4 class="h4">Graphics Studies</h4>
+                <a class="cv-link" href="https://github.com/BuCiuPi/MeshProcedural">github.com/BuCiuPi/MeshProcedural</a>
+                <p class="cv-chips cv-chips-plain"><span>Raymarching</span><span>Mesh API</span><span>Burst</span><span>DOTS</span></p>
+                <p>Raymarched SDF scenes; procedural meshes with Unity’s advanced Mesh API, Jobs, and Burst; a DOTS study with Entities and IJobEntity.</p>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--
+  - Games
+-->
+    <section class="cv-section">
+
+        <h3 class="h3 service-title">Games</h3>
+
+        <div class="cv-card" data-accent="hot">
+            <h4 class="h4">Match-3 Game – Unity Engine</h4>
+            <a class="cv-link" href="https://buciupi.github.io/match3-game-build/">buciupi.github.io/match3-game-build</a>
+            <ul class="timeline-text">
+                <li>Created in-game VFX that combine the Particle System, Animator, and sprite rigging.</li>
+                <li>Built an effect manager that reuses effects across multiple object pools.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--
+  - Resume Skill
+-->
+    <section class="resume-skill">
+
+        <h3 class="h3 resume-skill-title">Skills</h3>
+
+        <ul class="resume-skill-list has-scrollbar" id="skills-list">
+        </ul>
+    </section>
+
     <section class="timeline fade-in-up">
 
         <div class="title-wrapper">
@@ -45,17 +204,6 @@
         <ol class="timeline-list" id="education-list">
         </ol>
 
-    </section>
-
-    <!--
-  - Resume Skill
--->
-    <section class="resume-skill">
-
-        <h3 class="h3 resume-skill-title">Skills</h3>
-
-        <ul class="resume-skill-list has-scrollbar" id="skills-list">
-        </ul>
     </section>
 
 </article>
